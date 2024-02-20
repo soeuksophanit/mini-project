@@ -8,3 +8,7 @@
     font-family: "Poppins", sans-serif;
   }
 }
+
+.my-container {
+  @apply w-[110rem] mx-auto;
+}
