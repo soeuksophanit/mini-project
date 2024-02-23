@@ -6,6 +6,7 @@
   html {
     font-size: 62.5%;
     font-family: "Poppins", sans-serif;
+    color: #393939;
   }
 }
 
@@ -18,37 +19,16 @@
 }
 
 .hero-wrapper {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.79), rgba(0, 0, 0, 0.79)),
     url("../../../assets/images/hero-img.jpeg");
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 
-#info {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url("../../../assets/images/beach-2.jpeg");
-  background-position: right;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-#gallery {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url("../../../assets/images/beach-3.jpeg");
-  background-position: right;
-  background-size: cover;
-  background-attachment: fixed;
+#footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../../assets/images/footer-img.jpeg");
+  /* background-attachment: fixed; */
+  background-position: center;
 }
 
 @media (max-width: 930px) {

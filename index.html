@@ -27,7 +27,7 @@
 
     <title>Mini Project</title>
   </head>
-  <body class="bg-slate-50">
+  <body class="bg-slate-100">
     <!-- hero section  -->
     <section
       class="rounded-sm hero-wrapper h-screen min-h-[700px] bg-center relative"
@@ -79,10 +79,14 @@
       >
         <div class="text-center flex flex-col gap-8">
           <div>
-            <h3 class="text-[6.4rem] font-bold text-white tracking-wide">
+            <h3
+              class="text-[6.4rem] max-[500px]:text-[4.2rem] font-bold text-white tracking-wide"
+            >
               Let's <span class="text-indigo-500 font-riot">Travel</span>
             </h3>
-            <h3 class="text-[7.4rem] font-bold text-white tracking-wide">
+            <h3
+              class="text-[7.4rem] max-[500px]:text-[5.2rem] font-bold text-white tracking-wide"
+            >
               <span class="">Around</span> Cambodia
             </h3>
           </div>
@@ -107,14 +111,14 @@
     <main id="info" class="py-[10rem]">
       <!-- section info -->
       <section
-        class="my-container grid grid-cols-[1fr_60rem] max-[930px]:grid-cols-1 bg-white overflow-hidden rounded-md shadow-sm"
+        class="my-container grid grid-cols-[1fr_60rem] gap-6 max-[1130px]:grid-cols-[1fr_45rem] max-[930px]:grid-cols-1 p-6 bg-white overflow-hidden rounded-md shadow-sm"
       >
         <article
-          class="article flex flex-col gap-[2.2rem] p-6 justify-center items-center w-[40rem] mx-auto text-center"
+          class="article flex flex-col gap-[2.2rem] p-6 justify-center items-center w-[40rem] max-sm:w-full mx-auto text-center"
         >
           <h4 class="text-[3.2rem] font-bold uppercase tracking-wide">
             <span class="text-indigo-500 font-riot">Explore</span>
-            every <span class="font-riot text-indigo-500">place</span>
+            every <span class="font-riot text-indigo-500">places</span>
           </h4>
           <p class="text-[1.6rem]">
             We always find the beautiful place in our country. Fun time is
@@ -122,32 +126,39 @@
           </p>
           <a
             href="#"
-            class="inline-block text-[1.6rem] font-semibold py-3 px-6 text-white rounded-xl bg-indigo-500"
+            class="inline-block text-[1.6rem] font-semibold py-3 px-6 text-white rounded-md bg-indigo-500 shadow-lg hover:shadow-indigo-500/50 duration-300"
             >Learn More</a
           >
         </article>
-        <main class="info-image inline-block overflow-hidden">
-          <img
-            src="./assets/images/hero-img.jpeg"
-            alt="sea"
-            class="h-[55rem] w-full object-cover hover:scale-[1.4] duration-1000 max-[930px]:h-[30rem] cursor-pointer"
-          />
+        <main class="info-image inline-block overflow-hidden relative">
+          <div>
+            <img
+              src="./assets/images/hero-img.jpeg"
+              alt="sea"
+              class="h-[55rem] max-[930px]:h-[40rem] w-full object-cover hover:scale-[1.4] rounded-md duration-1000 max-[930px]:h-[30rem] cursor-pointer"
+            />
+            <!-- <p
+              class="py-2 px-6 max-sm:top-6 max-sm:right-6 bg-white rounded-[3.2rem] absolute right-6 text-[1.2rem] font-medium -top-12 group-hover:top-6 duration-700"
+            >
+              Koh Kong Krav
+            </p> -->
+          </div>
         </main>
       </section>
     </main>
 
     <!-- grid gallery  -->
-    <main id="gallery" class="py-[10rem] bg-red-400">
-      <h3
-        class="text-center mb-[4.4rem] uppercase text-[7.4rem] text-white font-bold tracking-widest"
+    <main id="gallery" class="">
+      <!-- <h3
+        class="text-center mb-[4.4rem] uppercase text-[7.4rem] font-bold tracking-widest"
       >
-        life moment
-      </h3>
+        <span class="font-riot text-indigo-500">life</span> moment
+      </h3> -->
       <section
-        class="my-container grid grid-cols-4 gap-6 bg-white p-6 rounded-md shadow-md"
+        class="my-container grid grid-cols-4 gap-6 bg-white p-6 rounded-md shadow-md max-sm:grid-cols-1 max-[1130px]:grid-cols-2"
       >
         <main
-          class="col-span-2 row-span-2 relative rounded-md overflow-hidden inline-block group"
+          class="col-span-2 row-span-2 max-sm:h-[30rem] max-sm:col-span-1 max-sm:row-span-1 relative rounded-md overflow-hidden inline-block group"
         >
           <img
             class="w-full h-full object-cover object-center duration-700 hover:scale-[1.2]"
@@ -155,14 +166,19 @@
             alt="gallery 1"
           />
           <p
-            class="py-2 px-6 bg-white rounded-[3.2rem] absolute left-6 -bottom-12 duration-300 group-hover:bottom-6"
+            class="py-2 px-6 max-sm:bottom-6 bg-white rounded-[3.2rem] absolute left-6 -bottom-12 duration-300 group-hover:bottom-6"
           >
             Mountain
           </p>
           <p
-            class="py-2 px-6 bg-white rounded-[3.2rem] absolute left-[10rem] -bottom-12 group-hover:bottom-6 duration-700"
+            class="py-2 px-6 max-sm:bottom-6 bg-white rounded-[3.2rem] absolute left-[10rem] -bottom-12 group-hover:bottom-6 duration-700"
           >
             Beach
+          </p>
+          <p
+            class="py-2 px-6 max-sm:top-6 max-sm:right-6 bg-white rounded-[3.2rem] absolute right-6 text-[1.2rem] font-medium -top-12 group-hover:top-6 duration-700"
+          >
+            Koh Kong Krav
           </p>
         </main>
         <main
@@ -174,14 +190,19 @@
             alt="gallery 1"
           />
           <p
-            class="py-2 px-6 bg-white rounded-[3.2rem] absolute left-6 -bottom-12 group-hover:bottom-6 duration-300"
+            class="py-2 px-6 max-sm:bottom-6 bg-white rounded-[3.2rem] absolute left-6 -bottom-12 group-hover:bottom-6 duration-300"
           >
             Mountain
           </p>
           <p
-            class="py-2 px-6 bg-white rounded-[3.2rem] absolute left-[10rem] -bottom-12 group-hover:bottom-6 duration-700"
+            class="py-2 px-6 max-sm:bottom-6 bg-white rounded-[3.2rem] absolute left-[10rem] -bottom-12 group-hover:bottom-6 duration-700"
           >
             Beach
+          </p>
+          <p
+            class="py-2 px-6 max-sm:top-6 max-sm:right-6 bg-white rounded-[3.2rem] absolute right-6 text-[1.2rem] font-medium -top-12 group-hover:top-6 duration-700"
+          >
+            Koh Kong Krav
           </p>
         </main>
         <main
@@ -193,14 +214,19 @@
             alt="gallery 1"
           />
           <p
-            class="py-2 px-6 bg-white rounded-[3.2rem] absolute left-6 -bottom-12 group-hover:bottom-6 duration-300"
+            class="py-2 px-6 max-sm:bottom-6 bg-white rounded-[3.2rem] absolute left-6 -bottom-12 group-hover:bottom-6 duration-300"
           >
             Mountain
           </p>
           <p
-            class="py-2 px-6 bg-white rounded-[3.2rem] absolute left-[10rem] -bottom-12 group-hover:bottom-6 duration-700"
+            class="py-2 px-6 max-sm:bottom-6 bg-white rounded-[3.2rem] absolute left-[10rem] -bottom-12 group-hover:bottom-6 duration-700"
           >
             Beach
+          </p>
+          <p
+            class="py-2 px-6 max-sm:top-6 max-sm:right-6 bg-white rounded-[3.2rem] absolute right-6 text-[1.2rem] font-medium -top-12 group-hover:top-6 duration-700"
+          >
+            Koh Kong Krav
           </p>
         </main>
         <main
@@ -212,14 +238,19 @@
             alt="gallery 1"
           />
           <p
-            class="py-2 px-6 bg-white rounded-[3.2rem] absolute left-6 -bottom-12 group-hover:bottom-6 duration-300"
+            class="py-2 px-6 max-sm:bottom-6 bg-white rounded-[3.2rem] absolute left-6 -bottom-12 group-hover:bottom-6 duration-300"
           >
             Mountain
           </p>
           <p
-            class="py-2 px-6 bg-white rounded-[3.2rem] absolute left-[10rem] -bottom-12 group-hover:bottom-6 duration-700"
+            class="py-2 px-6 max-sm:bottom-6 bg-white rounded-[3.2rem] absolute left-[10rem] -bottom-12 group-hover:bottom-6 duration-700"
           >
             Beach
+          </p>
+          <p
+            class="py-2 px-6 max-sm:top-6 max-sm:right-6 bg-white rounded-[3.2rem] absolute right-6 text-[1.2rem] font-medium -top-12 group-hover:top-6 duration-700"
+          >
+            Koh Kong Krav
           </p>
         </main>
         <main
@@ -231,17 +262,140 @@
             alt="gallery 1"
           />
           <p
-            class="py-2 px-6 bg-white rounded-[3.2rem] absolute left-6 -bottom-12 group-hover:bottom-6 duration-300"
+            class="py-2 px-6 max-sm:bottom-6 bg-white rounded-[3.2rem] absolute left-6 -bottom-12 group-hover:bottom-6 duration-300"
           >
             Mountain
           </p>
           <p
-            class="py-2 px-6 bg-white rounded-[3.2rem] absolute left-[10rem] -bottom-12 group-hover:bottom-6 duration-700"
+            class="py-2 px-6 max-sm:bottom-6 bg-white rounded-[3.2rem] absolute left-[10rem] -bottom-12 group-hover:bottom-6 duration-700"
           >
             Beach
+          </p>
+          <p
+            class="py-2 px-6 max-sm:top-6 max-sm:right-6 bg-white rounded-[3.2rem] absolute right-6 text-[1.2rem] font-medium -top-12 group-hover:top-6 duration-700"
+          >
+            Koh Kong Krav
           </p>
         </main>
       </section>
     </main>
+
+    <!-- simple card -->
+    <section class="cards my-[10rem]">
+      <main
+        class="my-container p-6 bg-white rounded-md shadow-md grid grid-cols-[repeat(auto-fit,minmax(25rem,auto))] gap-[3.2rem]"
+      >
+        <div class="card flex flex-col gap-8 group">
+          <p
+            class="text-[1.6rem] font-bold italic tracking-wider relative after:content-[''] after:absolute after:w-0 after:h-[.3rem] after:bg-indigo-500 after:duration-700 after:rounded-md after:bottom-[-.5rem] after:left-0 group-hover:after:w-full self-start"
+          >
+            Koh Kong Beach
+          </p>
+          <div class="inline-block overflow-hidden">
+            <img
+              src="./assets/images/beach-2.jpeg"
+              alt="pic"
+              class="h-[30rem] object-cover object-center duration-500 hover:scale-[1.3]"
+            />
+          </div>
+          <p class="text-[1.4rem]">
+            This is Koh Kong Krav. The beautiful beach in Cambodia
+          </p>
+          <a
+            href="#"
+            class="bg-[#393939] text-white py-3 px-6 text-[1.2rem] self-start font-medium tracking-widest"
+            >See Detail</a
+          >
+        </div>
+        <div class="card flex flex-col gap-8 group">
+          <p
+            class="text-[1.6rem] font-bold italic tracking-wider relative after:content-[''] after:absolute after:w-0 after:h-[.3rem] after:bg-indigo-500 after:duration-700 after:rounded-md after:bottom-[-.5rem] after:left-0 group-hover:after:w-full self-start"
+          >
+            Koh Kong Beach
+          </p>
+          <div class="inline-block overflow-hidden">
+            <img
+              src="./assets/images/beach-2.jpeg"
+              alt="pic"
+              class="h-[30rem] object-cover object-center duration-500 hover:scale-[1.3]"
+            />
+          </div>
+          <p class="text-[1.4rem]">
+            This is Koh Kong Krav. The beautiful beach in Cambodia
+          </p>
+          <a
+            href="#"
+            class="bg-[#393939] text-white py-3 px-6 text-[1.2rem] self-start font-medium tracking-widest"
+            >See Detail</a
+          >
+        </div>
+        <div class="card flex flex-col gap-8 group">
+          <p
+            class="text-[1.6rem] font-bold italic tracking-wider relative after:content-[''] after:absolute after:w-0 after:h-[.3rem] after:bg-indigo-500 after:duration-700 after:rounded-md after:bottom-[-.5rem] after:left-0 group-hover:after:w-full self-start"
+          >
+            Koh Kong Beach
+          </p>
+          <div class="inline-block overflow-hidden">
+            <img
+              src="./assets/images/beach-2.jpeg"
+              alt="pic"
+              class="h-[30rem] object-cover object-center duration-500 hover:scale-[1.3]"
+            />
+          </div>
+          <p class="text-[1.4rem]">
+            This is Koh Kong Krav. The beautiful beach in Cambodia
+          </p>
+          <a
+            href="#"
+            class="bg-[#393939] text-white py-3 px-6 text-[1.2rem] self-start font-medium tracking-widest"
+            >See Detail</a
+          >
+        </div>
+      </main>
+    </section>
+
+    <!-- footer  -->
+    <footer id="footer" class="bg-[#393939]">
+      <section class="my-container py-[8.4rem]">
+        <div class="my-top-footer flex justify-between items-center py-6">
+          <a
+            href="#"
+            class="text-white text-[3.2rem] font-semibold font-riot tracking-widest"
+            >Traveller</a
+          >
+          <a
+            href="#"
+            class="py-3 px-6 text-[1.6rem] bg-blue-400 text-white font-semibold"
+            >Get Started</a
+          >
+        </div>
+        <div
+          class="main-footer grid grid-cols-[repeat(auto-fit,minmax(25rem,auto))] gap-6 border-t-2 pt-6"
+        >
+          <div class="flex text-white flex-col gap-4 items-start">
+            <p class="font-semibold tracking-wider text-[1.8rem]">Product</p>
+            <p class="text-[1.4rem]">Shoes</p>
+            <p class="text-[1.4rem]">Tents</p>
+          </div>
+          <div class="flex text-white flex-col gap-4 items-start">
+            <p class="font-semibold tracking-wider text-[1.8rem]">Resource</p>
+            <p class="text-[1.4rem]">Learn</p>
+            <p class="text-[1.4rem]">FAQ</p>
+            <p class="text-[1.4rem]">Review</p>
+          </div>
+          <div class="flex text-white flex-col gap-4 items-start">
+            <p class="font-semibold tracking-wider text-[1.8rem]">Company</p>
+            <p class="text-[1.4rem]">About Us</p>
+            <p class="text-[1.4rem]">Join Team</p>
+          </div>
+          <div class="flex text-white flex-col gap-4 items-start">
+            <p class="font-semibold tracking-wider text-[1.8rem]">Address</p>
+            <p class="text-[1.4rem]">Stree #6A Highway</p>
+            <p class="text-[1.4rem]">Bakheng - Phnom Penh - Cambodia</p>
+            <p class="text-[1.4rem]">Contact - 0123-456-789</p>
+          </div>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
