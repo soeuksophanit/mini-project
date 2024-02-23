@@ -9,15 +9,51 @@
   }
 }
 
+.font-riot {
+  font-family: "Protest Riot", sans-serif;
+}
+
 .my-container {
-  @apply w-[110rem] mx-auto;
+  @apply w-[110rem] mx-auto max-[1130px]:w-[90rem] max-[930px]:w-[90%];
 }
 
 .hero-wrapper {
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.8)
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
     ),
     url("../../../assets/images/hero-img.jpeg");
+  background-attachment: fixed;
+}
+
+#info {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("../../../assets/images/beach-2.jpeg");
+  background-position: right;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#gallery {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("../../../assets/images/beach-3.jpeg");
+  background-position: right;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (max-width: 930px) {
+  .article {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
 }

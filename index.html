@@ -12,6 +12,14 @@
       rel="stylesheet"
     />
     <!-- ------------------- -->
+    <!-- Riot font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap"
+      rel="stylesheet"
+    />
+    <!--  -->
 
     <!-- link css  -->
     <link rel="stylesheet" href="./src/css/global.css" />
@@ -19,7 +27,7 @@
 
     <title>Mini Project</title>
   </head>
-  <body class="bg-slate-200">
+  <body class="bg-slate-50">
     <!-- hero section  -->
     <section
       class="rounded-sm hero-wrapper h-screen min-h-[700px] bg-center relative"
@@ -27,10 +35,10 @@
       <!-- header section  -->
       <header class="shadow-sm py-6">
         <section class="my-container flex justify-between items-center">
-          <main class="logo text-[1.6rem] text-white font-medium">
-            <a href="#">Tourism</a>
+          <main class="logo text-[2.6rem] text-white font-medium">
+            <a href="#" class="font-riot tracking-wider">Traveller</a>
           </main>
-          <nav>
+          <nav class="max-[930px]:hidden">
             <ul class="flex gap-10 items-center">
               <li
                 class="py-3 px-6 hover:duration-700 hover:border-white border-transparent border rounded-sm text-[1.6rem] font-medium text-white"
@@ -47,6 +55,11 @@
               >
                 <a href="#" class="relative">Travel Tips</a>
               </li>
+              <li
+                class="py-3 px-6 hover:duration-700 hover:border-white border-transparent border rounded-sm text-[1.6rem] font-medium text-white"
+              >
+                <a href="#" class="relative">About Us</a>
+              </li>
             </ul>
           </nav>
           <main class="register flex items-center gap-10">
@@ -62,14 +75,14 @@
 
       <!-- hero describe  -->
       <main
-        class="hero-describe w-[70rem] absolute top-[50%] flex flex-col items-center gap-20 left-[50%] p-6 translate-x-[-50%] translate-y-[-50%]"
+        class="hero-describe w-[100rem] max-[1130px]:w-[90rem] max-[930px]:w-[90%] absolute top-[50%] flex flex-col items-center gap-20 left-[50%] p-6 translate-x-[-50%] translate-y-[-50%]"
       >
         <div class="text-center flex flex-col gap-8">
           <div>
-            <h3 class="text-[5.4rem] font-bold text-white tracking-wide">
-              Let's <span class="text-indigo-500">Travel</span>
-            </h3>
             <h3 class="text-[6.4rem] font-bold text-white tracking-wide">
+              Let's <span class="text-indigo-500 font-riot">Travel</span>
+            </h3>
+            <h3 class="text-[7.4rem] font-bold text-white tracking-wide">
               <span class="">Around</span> Cambodia
             </h3>
           </div>
@@ -88,7 +101,147 @@
       </main>
       <!-- -------------- -->
     </section>
-
     <!-- ------------- -->
+
+    <!-- info section  -->
+    <main id="info" class="py-[10rem]">
+      <!-- section info -->
+      <section
+        class="my-container grid grid-cols-[1fr_60rem] max-[930px]:grid-cols-1 bg-white overflow-hidden rounded-md shadow-sm"
+      >
+        <article
+          class="article flex flex-col gap-[2.2rem] p-6 justify-center items-center w-[40rem] mx-auto text-center"
+        >
+          <h4 class="text-[3.2rem] font-bold uppercase tracking-wide">
+            <span class="text-indigo-500 font-riot">Explore</span>
+            every <span class="font-riot text-indigo-500">place</span>
+          </h4>
+          <p class="text-[1.6rem]">
+            We always find the beautiful place in our country. Fun time is
+            coming for us.
+          </p>
+          <a
+            href="#"
+            class="inline-block text-[1.6rem] font-semibold py-3 px-6 text-white rounded-xl bg-indigo-500"
+            >Learn More</a
+          >
+        </article>
+        <main class="info-image inline-block overflow-hidden">
+          <img
+            src="./assets/images/hero-img.jpeg"
+            alt="sea"
+            class="h-[55rem] w-full object-cover hover:scale-[1.4] duration-1000 max-[930px]:h-[30rem] cursor-pointer"
+          />
+        </main>
+      </section>
+    </main>
+
+    <!-- grid gallery  -->
+    <main id="gallery" class="py-[10rem] bg-red-400">
+      <h3
+        class="text-center mb-[4.4rem] uppercase text-[7.4rem] text-white font-bold tracking-widest"
+      >
+        life moment
+      </h3>
+      <section
+        class="my-container grid grid-cols-4 gap-6 bg-white p-6 rounded-md shadow-md"
+      >
+        <main
+          class="col-span-2 row-span-2 relative rounded-md overflow-hidden inline-block group"
+        >
+          <img
+            class="w-full h-full object-cover object-center duration-700 hover:scale-[1.2]"
+            src="./assets/images/beach-2.jpeg"
+            alt="gallery 1"
+          />
+          <p
+            class="py-2 px-6 bg-white rounded-[3.2rem] absolute left-6 -bottom-12 duration-300 group-hover:bottom-6"
+          >
+            Mountain
+          </p>
+          <p
+            class="py-2 px-6 bg-white rounded-[3.2rem] absolute left-[10rem] -bottom-12 group-hover:bottom-6 duration-700"
+          >
+            Beach
+          </p>
+        </main>
+        <main
+          class="h-[30rem] rounded-md relative overflow-hidden inline-block group"
+        >
+          <img
+            class="w-full h-full object-cover object-center duration-700 hover:scale-[1.2]"
+            src="./assets/images/beach-2.jpeg"
+            alt="gallery 1"
+          />
+          <p
+            class="py-2 px-6 bg-white rounded-[3.2rem] absolute left-6 -bottom-12 group-hover:bottom-6 duration-300"
+          >
+            Mountain
+          </p>
+          <p
+            class="py-2 px-6 bg-white rounded-[3.2rem] absolute left-[10rem] -bottom-12 group-hover:bottom-6 duration-700"
+          >
+            Beach
+          </p>
+        </main>
+        <main
+          class="h-[30rem] rounded-md relative overflow-hidden inline-block group"
+        >
+          <img
+            class="w-full h-full object-cover object-center duration-700 hover:scale-[1.2]"
+            src="./assets/images/beach-2.jpeg"
+            alt="gallery 1"
+          />
+          <p
+            class="py-2 px-6 bg-white rounded-[3.2rem] absolute left-6 -bottom-12 group-hover:bottom-6 duration-300"
+          >
+            Mountain
+          </p>
+          <p
+            class="py-2 px-6 bg-white rounded-[3.2rem] absolute left-[10rem] -bottom-12 group-hover:bottom-6 duration-700"
+          >
+            Beach
+          </p>
+        </main>
+        <main
+          class="h-[30rem] rounded-md relative overflow-hidden inline-block group"
+        >
+          <img
+            class="w-full h-full object-cover object-center duration-700 hover:scale-[1.2]"
+            src="./assets/images/beach-2.jpeg"
+            alt="gallery 1"
+          />
+          <p
+            class="py-2 px-6 bg-white rounded-[3.2rem] absolute left-6 -bottom-12 group-hover:bottom-6 duration-300"
+          >
+            Mountain
+          </p>
+          <p
+            class="py-2 px-6 bg-white rounded-[3.2rem] absolute left-[10rem] -bottom-12 group-hover:bottom-6 duration-700"
+          >
+            Beach
+          </p>
+        </main>
+        <main
+          class="h-[30rem] rounded-md relative overflow-hidden inline-block group"
+        >
+          <img
+            class="w-full h-full object-cover object-center duration-700 hover:scale-[1.2]"
+            src="./assets/images/beach-2.jpeg"
+            alt="gallery 1"
+          />
+          <p
+            class="py-2 px-6 bg-white rounded-[3.2rem] absolute left-6 -bottom-12 group-hover:bottom-6 duration-300"
+          >
+            Mountain
+          </p>
+          <p
+            class="py-2 px-6 bg-white rounded-[3.2rem] absolute left-[10rem] -bottom-12 group-hover:bottom-6 duration-700"
+          >
+            Beach
+          </p>
+        </main>
+      </section>
+    </main>
   </body>
 </html>
