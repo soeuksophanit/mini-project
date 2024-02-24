@@ -34,12 +34,15 @@
         <main class="logo text-[2.6rem] font-medium">
           <a
             href="../index.html"
-            class="font-riot text-indigo-500 tracking-wider"
+            class="font-riot text-indigo-500 tracking-wider relative z-[99999]"
             >Traveller</a
           >
         </main>
-        <nav class="max-[930px]:hidden">
-          <ul class="flex gap-10 items-center">
+        <nav
+          id="nav"
+          class="max-[930px]:fixed max-[930px]:inset-0 max-[930px]:duration-500 max-[930px]:translate-x-[-100%] max-[930px]:bg-white max-[930px]:z-50 max-[930px]:justify-center max-[930px]:items-center max-[930px]:flex"
+        >
+          <ul class="flex gap-10 items-center max-[930px]:flex-col">
             <li
               class="py-3 px-6 hover:duration-700 hover:border-indigo-500 hover:text-indigo-500 border-transparent border rounded-sm text-[1.6rem] font-medium"
             >
@@ -62,14 +65,35 @@
             >
               <a href="#" class="relative text-indigo-600">About Us</a>
             </li>
+            <li>
+              <a
+                href="./register.html"
+                class="py-3 hidden max-[930px]:block max-[930px]:text-[#393939] px-6 border hover:border-indigo-500 hover:text-indigo-500 duration-300 text-white font-medium rounded-sm text-[1.6rem]"
+                >Register</a
+              >
+            </li>
           </ul>
         </nav>
         <main class="register flex items-center gap-10">
           <a
-            href="#"
-            class="py-3 px-6 border border-gray-900 hover:border-indigo-500 hover:text-indigo-500 duration-300 font-medium rounded-sm text-[1.6rem]"
-            >Contact</a
+            href="./register.html"
+            class="py-3 max-[930px]:hidden px-6 border border-gray-900 hover:border-indigo-500 hover:text-indigo-500 duration-300 font-medium rounded-sm text-[1.6rem]"
+            >Register</a
           >
+          <div
+            id="hamburger"
+            class="hamburger relative z-[9999] hidden max-[930px]:flex max-[930px]:flex-col items-end gap-2 group cursor-pointer"
+          >
+            <span
+              class="h-[.3rem] w-[3rem] rounded-md duration-300 bg-[#393939] group-hover:bg-indigo-500"
+            ></span>
+            <span
+              class="h-[.3rem] w-[3rem] rounded-md duration-500 group-hover:w-[2rem] bg-[#393939] group-hover:bg-indigo-500"
+            ></span>
+            <span
+              class="h-[.3rem] w-[3rem] rounded-md duration-700 group-hover:w-[1.5rem] bg-[#393939] group-hover:bg-indigo-500"
+            ></span>
+          </div>
         </main>
       </section>
     </header>
@@ -78,7 +102,9 @@
     <section
       class="my-container bg-white px-10 pt-[6.4rem] pb-10 mb-[10rem] mt-10 rounded-md shadow-sm"
     >
-      <main class="profile flex justify-center gap-[6.2rem]">
+      <main
+        class="profile flex justify-center gap-[6.2rem] max-[640px]:gap-[3.2rem] max-[870px]:flex-col max-[870px]:items-center"
+      >
         <div
           class="w-[10rem] h-[10rem] rounded-full overflow-hidden border-[.3rem] border-indigo-600"
         >
@@ -89,9 +115,9 @@
           />
         </div>
         <div class="flex flex-col gap-6">
-          <div class="flex gap-10 items-center">
+          <div class="flex gap-10 items-center max-[640px]:flex-col">
             <p
-              class="my-name capitalize cursor-default font-bold text-[3.4rem] tracking-wider flex items-center gap-3"
+              class="my-name capitalize cursor-default font-bold text-[3.4rem] max-[870px]:text-[2.8rem] tracking-wider flex items-center gap-3"
             >
               soeuk sophanit
               <svg
@@ -113,14 +139,14 @@
               <a
                 target="_blank"
                 href="https://youtu.be/dQw4w9WgXcQ?feature=shared"
-                class="py-3 px-6 bg-indigo-600 text-white font-medium text-[1.6rem] rounded-md shadow-md duration-300 hover:shadow-indigo-500"
+                class="py-3 px-6 bg-indigo-600 text-white font-medium text-[1.6rem] max-[870px]:text-[1.4rem] rounded-md shadow-md duration-300 hover:shadow-indigo-500"
               >
                 Follow
               </a>
               <a
                 target="_blank"
                 href="https://youtu.be/i5zQ7q0cMbs?feature=shared"
-                class="py-3 px-6 bg-indigo-600/15 text-indigo-700 font-medium text-[1.6rem] rounded-md duration-300 hover:shadow-indigo-500/20"
+                class="py-3 px-6 bg-indigo-600/15 text-indigo-700 font-medium text-[1.6rem] max-[870px]:text-[1.4rem] rounded-md duration-300 hover:shadow-indigo-500/20"
               >
                 Message
               </a>
@@ -170,7 +196,7 @@
               >
             </p>
           </div>
-          <div class="w-[50rem]">
+          <div class="w-[50rem] max-[640px]:w-[90%]">
             <p class="text-[1.4rem] leading-[1.6] cursor-default tracking-wide">
               Hello there all my gorgeous people on the internet!
 
@@ -187,7 +213,9 @@
               <span class="text-indigo-500 font-medium">24 - Feb - 2024</span>.
             </p>
           </div>
-          <div class="flex gap-6">
+          <div
+            class="grid grid-cols-3 max-[630px]:grid-cols-2 w-fit justify-start text-center gap-6"
+          >
             <p
               class="py-2 px-6 bg-gray-50 rounded-[3.2rem] font-medium tracking-wide text-[.8rem] cursor-pointer duration-500 border border-indigo-500 text-indigo-500"
             >
@@ -210,7 +238,7 @@
         <button
           class="py-2 px-8 font-bold text-[1.2rem] bg-gray-100 rounded-[3.2rem] text-indigo-500"
         >
-          9 Photos
+          7 Photos
         </button>
         <button
           class="py-2 px-8 duration-300 font-medium text-[1.2rem] hover:bg-gray-100 hover:text-indigo-500 rounded-[3.2rem]"
@@ -224,9 +252,11 @@
         </button>
       </main>
       <main
-        class="my-gallery grid grid-cols-4 grid-rows-3 min-h-[100rem] gap-4"
+        class="my-gallery grid grid-cols-4 grid-rows-3 min-h-[100rem] gap-4 max-[910px]:grid-cols-2 max-[600px]:grid-cols-1"
       >
-        <div class="col-span-2 rounded-md overflow-hidden relative group">
+        <div
+          class="col-span-2 max-[910px]:col-[1/2] max-[600px]:col-[1/2] max-[600px]:row-[1/2] rounded-md overflow-hidden relative group"
+        >
           <img
             src="../assets/images/cover-kk.PNG"
             alt="my picture"
@@ -257,7 +287,9 @@
             Koh Kong Krav
           </p>
         </div>
-        <div class="col-span-2 rounded-md overflow-hidden relative group">
+        <div
+          class="col-span-2 max-[910px]:col-span-1 max-[600px]:col-[1/2] max-[600px]:row-[2/3] rounded-md overflow-hidden relative group"
+        >
           <img
             src="../assets/images/team.jpg"
             alt="my picture"
@@ -288,7 +320,9 @@
             Knong Psar
           </p>
         </div>
-        <div class="rounded-md overflow-hidden relative group">
+        <div
+          class="rounded-md max-[910px]:col-[2/3] max-[600px]:col-[1/2] max-[600px]:row-[3/4] overflow-hidden relative group"
+        >
           <img
             src="../assets/images/me.jpg"
             alt="my picture"
@@ -320,7 +354,7 @@
           </p>
         </div>
         <div
-          class="col-start-2 col-end-4 rounded-md overflow-hidden relative group"
+          class="col-start-2 col-end-4 max-[910px]:col-[1/2] max-[910px]:row-[2/3] max-[600px]:col-[1/2] max-[600px]:row-[4/5] rounded-md overflow-hidden relative group"
         >
           <img
             src="../assets/images/knong-psar.jpg"
@@ -352,7 +386,9 @@
             Knong Psar
           </p>
         </div>
-        <div class="rounded-md overflow-hidden relative group">
+        <div
+          class="rounded-md max-[910px]:col-[1/2] max-[600px]:col-[1/2] max-[600px]:row-[5/6] overflow-hidden relative group"
+        >
           <img
             src="../assets/images/stand-alone.jpg"
             alt="my picture"
@@ -383,7 +419,9 @@
             Knong Psar
           </p>
         </div>
-        <div class="col-span-2 rounded-md overflow-hidden relative group">
+        <div
+          class="col-span-2 max-[910px]:col-[2/3] max-[600px]:col-[1/2] max-[600px]:row-[6/7] rounded-md overflow-hidden relative group"
+        >
           <img
             src="../assets/images/kohkong-1.JPG"
             alt="my picture"
@@ -414,7 +452,9 @@
             Koh Kong Krav
           </p>
         </div>
-        <div class="rounded-md overflow-hidden relative group col-span-2">
+        <div
+          class="rounded-md overflow-hidden relative group col-span-2 max-[600px]:col-[1/2]"
+        >
           <img
             src="../assets/images/heart.JPG"
             alt="my picture"
@@ -491,5 +531,7 @@
         </div>
       </section>
     </footer>
+
+    <script src="../js/index.js"></script>
   </body>
 </html>

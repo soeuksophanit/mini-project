@@ -34,12 +34,15 @@
         <main class="logo text-[2.6rem] font-medium">
           <a
             href="../index.html"
-            class="font-riot text-indigo-500 tracking-wider"
+            class="font-riot text-indigo-500 tracking-wider relative z-[99999]"
             >Traveller</a
           >
         </main>
-        <nav class="max-[930px]:hidden">
-          <ul class="flex gap-10 items-center">
+        <nav
+          id="nav"
+          class="max-[930px]:fixed max-[930px]:inset-0 max-[930px]:duration-500 max-[930px]:translate-x-[-100%] max-[930px]:bg-white max-[930px]:z-50 max-[930px]:justify-center max-[930px]:items-center max-[930px]:flex"
+        >
+          <ul class="flex gap-10 items-center max-[930px]:flex-col">
             <li
               class="py-3 px-6 hover:duration-700 hover:border-indigo-500 hover:text-indigo-500 border-transparent border rounded-sm text-[1.6rem] font-medium"
             >
@@ -48,7 +51,9 @@
             <li
               class="py-3 px-6 hover:duration-700 hover:border-indigo-500 hover:text-indigo-500 border-transparent border rounded-sm text-[1.6rem] font-medium"
             >
-              <a href="#" class="relative text-indigo-600">Popular Places</a>
+              <a href="./popular-places.html" class="relative text-indigo-600"
+                >Popular Places</a
+              >
             </li>
             <li
               class="py-3 px-6 hover:duration-700 hover:border-indigo-500 hover:text-indigo-500 border-transparent border rounded-sm text-[1.6rem] font-medium"
@@ -58,16 +63,37 @@
             <li
               class="py-3 px-6 hover:duration-700 hover:border-indigo-500 hover:text-indigo-500 border-transparent border rounded-sm text-[1.6rem] font-medium"
             >
-              <a href="./about.html" class="relative">About Us</a>
+              <a href="../pages/about.html" class="relative">About Us</a>
+            </li>
+            <li>
+              <a
+                href="./register.html"
+                class="py-3 hidden max-[930px]:block max-[930px]:text-[#393939] px-6 border hover:border-indigo-500 hover:text-indigo-500 duration-300 text-white font-medium rounded-sm text-[1.6rem]"
+                >Register</a
+              >
             </li>
           </ul>
         </nav>
         <main class="register flex items-center gap-10">
           <a
-            href="#"
-            class="py-3 px-6 border border-gray-900 hover:border-indigo-500 hover:text-indigo-500 duration-300 font-medium rounded-sm text-[1.6rem]"
-            >Contact</a
+            href="./register.html"
+            class="py-3 max-[930px]:hidden px-6 border border-gray-900 hover:border-indigo-500 hover:text-indigo-500 duration-300 font-medium rounded-sm text-[1.6rem]"
+            >Register</a
           >
+          <div
+            id="hamburger"
+            class="hamburger relative z-[9999] hidden max-[930px]:flex max-[930px]:flex-col items-end gap-2 group cursor-pointer"
+          >
+            <span
+              class="h-[.3rem] w-[3rem] rounded-md duration-300 bg-[#393939] group-hover:bg-indigo-500"
+            ></span>
+            <span
+              class="h-[.3rem] w-[3rem] rounded-md duration-500 group-hover:w-[2rem] bg-[#393939] group-hover:bg-indigo-500"
+            ></span>
+            <span
+              class="h-[.3rem] w-[3rem] rounded-md duration-700 group-hover:w-[1.5rem] bg-[#393939] group-hover:bg-indigo-500"
+            ></span>
+          </div>
         </main>
       </section>
     </header>
@@ -697,5 +723,7 @@
         </div>
       </section>
     </footer>
+
+    <script src="../js/index.js"></script>
   </body>
 </html>

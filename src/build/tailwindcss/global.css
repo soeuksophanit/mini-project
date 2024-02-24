@@ -7,6 +7,7 @@
     font-size: 62.5%;
     font-family: "Poppins", sans-serif;
     color: #393939;
+    scroll-behavior: smooth;
   }
 }
 
@@ -37,6 +38,22 @@
 
 .my-card-place:hover .location {
   @apply top-6;
+}
+
+.my-gallery img {
+  @apply max-[600px]:h-[35rem];
+}
+
+nav.my-navbar {
+  @apply translate-x-0;
+}
+
+header nav span {
+  @apply bg-white;
+}
+
+header nav.my-navbar + main span {
+  @apply bg-[#393939];
 }
 
 @media (max-width: 930px) {
