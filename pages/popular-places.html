@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- google font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ------------------- -->
+    <!-- Riot font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap"
+      rel="stylesheet"
+    />
+    <!--  -->
+
+    <!-- link css  -->
+    <link rel="stylesheet" href="../src/css/global.css" />
+    <!-- --------- -->
+
+    <title>Popular Places</title>
+  </head>
+  <body class="bg-slate-100">
+    <!-- header section  -->
+    <header class="shadow-sm py-6 bg-white sticky top-0 z-10">
+      <section class="my-container flex justify-between items-center">
+        <main class="logo text-[2.6rem] font-medium">
+          <a
+            href="../index.html"
+            class="font-riot text-indigo-500 tracking-wider"
+            >Traveller</a
+          >
+        </main>
+        <nav class="max-[930px]:hidden">
+          <ul class="flex gap-10 items-center">
+            <li
+              class="py-3 px-6 hover:duration-700 hover:border-indigo-500 hover:text-indigo-500 border-transparent border rounded-sm text-[1.6rem] font-medium"
+            >
+              <a href="#" class="relative">Destinations</a>
+            </li>
+            <li
+              class="py-3 px-6 hover:duration-700 hover:border-indigo-500 hover:text-indigo-500 border-transparent border rounded-sm text-[1.6rem] font-medium"
+            >
+              <a href="#" class="relative text-indigo-600">Popular Places</a>
+            </li>
+            <li
+              class="py-3 px-6 hover:duration-700 hover:border-indigo-500 hover:text-indigo-500 border-transparent border rounded-sm text-[1.6rem] font-medium"
+            >
+              <a href="./travel-tip.html" class="relative">Travel Tips</a>
+            </li>
+            <li
+              class="py-3 px-6 hover:duration-700 hover:border-indigo-500 hover:text-indigo-500 border-transparent border rounded-sm text-[1.6rem] font-medium"
+            >
+              <a href="./about.html" class="relative">About Us</a>
+            </li>
+          </ul>
+        </nav>
+        <main class="register flex items-center gap-10">
+          <a
+            href="#"
+            class="py-3 px-6 border border-gray-900 hover:border-indigo-500 hover:text-indigo-500 duration-300 font-medium rounded-sm text-[1.6rem]"
+            >Contact</a
+          >
+        </main>
+      </section>
+    </header>
+    <!-- --------------- -->
+
+    <!-- activities card  -->
+    <section
+      class="my-container shadow-sm p-10 bg-white rounded-md mt-[3.2rem] mb-[6.4rem]"
+    >
+      <h4 class="font-bold text-[2.8rem] tracking-wide mb-10">
+        Popular Places
+      </h4>
+      <main
+        class="cards grid grid-cols-[repeat(auto-fit,minmax(25rem,auto))] gap-10"
+      >
+        <!-- card  -->
+        <div class="my-card-place">
+          <div
+            class="img relative rounded-md overflow-hidden inline-block group"
+          >
+            <img
+              src="../assets/images/angkor.jpg"
+              alt="angkor wat"
+              class="w-full h-[35rem] object-cover object-center duration-[3s] hover:scale-150"
+            />
+            <p
+              class="py-2 flex location items-center gap-2 px-6 max-sm:top-6 max-sm:right-6 bg-white rounded-[3.2rem] absolute right-6 text-[1.2rem] font-medium -top-12 duration-700"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2.5"
+                stroke="currentColor"
+                class="w-6 h-6 stroke-indigo-500"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                />
+              </svg>
+              Siem Reab
+            </p>
+          </div>
+          <div class="pt-6 flex flex-col items-start justify-between h-[18rem]">
+            <p
+              class="font-medium cursor-pointer text-[1.4rem] capitalize py-2 px-8 border border-transparent duration-300 hover:border-indigo-500 bg-gray-50 rounded-[3.2rem] text-indigo-500"
+            >
+              #Angkor Wat Temple
+            </p>
+            <div>
+              <p class="text-[1.4rem] tracking-wide">
+                Cambodian people always visited Angkor Wat Temple after their
+                voccation.
+              </p>
+              <p class="text-[1.4rem] tracking-wide">
+                The best place in Siem Reab you should visit!
+              </p>
+            </div>
+            <div class="category flex items-center gap-3">
+              <p
+                class="py-1 text-[.8rem] tracking-wide cursor-pointer px-4 bg-gray-50 rounded-[3.2rem] border border-indigo-500 text-indigo-500"
+              >
+                #Temple
+              </p>
+              <p
+                class="py-1 text-[.8rem] tracking-wide cursor-pointer px-4 bg-gray-50 rounded-[3.2rem] border border-green-500 text-green-500"
+              >
+                #Forest
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="my-card-place">
+          <div
+            class="img relative rounded-md overflow-hidden inline-block group"
+          >
+            <img
+              src="../assets/images/cloud.jpg"
+              alt="angkor wat"
+              class="w-full h-[35rem] object-cover object-center duration-[3s] hover:scale-150"
+            />
+            <p
+              class="py-2 flex location items-center gap-2 px-6 max-sm:top-6 max-sm:right-6 bg-white rounded-[3.2rem] absolute right-6 text-[1.2rem] font-medium -top-12 duration-700"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2.5"
+                stroke="currentColor"
+                class="w-6 h-6 stroke-indigo-500"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                />
+              </svg>
+              Kampong Speu
+            </p>
+          </div>
+          <div class="pt-6 flex flex-col items-start justify-between h-[18rem]">
+            <p
+              class="font-medium cursor-pointer text-[1.4rem] capitalize py-2 px-8 border border-transparent duration-300 hover:border-indigo-500 bg-gray-50 rounded-[3.2rem] text-indigo-500"
+            >
+              #Knong psar Mountain
+            </p>
+            <div>
+              <p class="text-[1.4rem] tracking-wide">
+                Knong Psar is one of the top highest mountain in Cambodia.
+              </p>
+              <p class="text-[1.4rem] tracking-wide">
+                To reach the top of the mountain we need to walk through.
+              </p>
+            </div>
+            <div class="category flex items-center gap-3">
+              <p
+                class="py-1 text-[.8rem] tracking-wide cursor-pointer px-4 bg-gray-50 rounded-[3.2rem] border border-blue-500 text-blue-500"
+              >
+                #Mountain
+              </p>
+              <p
+                class="py-1 text-[.8rem] tracking-wide cursor-pointer px-4 bg-gray-50 rounded-[3.2rem] border border-green-500 text-green-500"
+              >
+                #Forest
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="my-card-place">
+          <div
+            class="img relative rounded-md overflow-hidden inline-block group"
+          >
+            <img
+              src="../assets/images/droneview.JPG"
+              alt="angkor wat"
+              class="w-full h-[35rem] object-cover object-center duration-[3s] hover:scale-150"
+            />
+            <p
+              class="py-2 flex location items-center gap-2 px-6 max-sm:top-6 max-sm:right-6 bg-white rounded-[3.2rem] absolute right-6 text-[1.2rem] font-medium -top-12 duration-700"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2.5"
+                stroke="currentColor"
+                class="w-6 h-6 stroke-indigo-500"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                />
+              </svg>
+              Koh Kong
+            </p>
+          </div>
+          <div class="pt-6 flex flex-col items-start justify-between h-[18rem]">
+            <p
+              class="font-medium cursor-pointer text-[1.4rem] capitalize py-2 px-8 border border-transparent duration-300 hover:border-indigo-500 bg-gray-50 rounded-[3.2rem] text-indigo-500"
+            >
+              #Koh Kong Krav Beach
+            </p>
+            <div>
+              <p class="text-[1.4rem] tracking-wide">
+                Knong Psar is one of the top highest mountain in Cambodia.
+              </p>
+              <p class="text-[1.4rem] tracking-wide">
+                To reach the top of the mountain we need to walk through.
+              </p>
+            </div>
+            <div class="category flex items-center gap-3">
+              <p
+                class="py-1 text-[.8rem] tracking-wide cursor-pointer px-4 bg-gray-50 rounded-[3.2rem] border border-emerald-600 text-emerald-600"
+              >
+                #Beach
+              </p>
+              <p
+                class="py-1 text-[.8rem] tracking-wide cursor-pointer px-4 bg-gray-50 rounded-[3.2rem] border border-green-500 text-green-500"
+              >
+                #Forest
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="my-card-place">
+          <div
+            class="img relative rounded-md overflow-hidden inline-block group"
+          >
+            <img
+              src="../assets/images/selfies.jpg"
+              alt="angkor wat"
+              class="w-full h-[35rem] object-cover object-center duration-[3s] hover:scale-150"
+            />
+            <p
+              class="py-2 flex location items-center gap-2 px-6 max-sm:top-6 max-sm:right-6 bg-white rounded-[3.2rem] absolute right-6 text-[1.2rem] font-medium -top-12 duration-700"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2.5"
+                stroke="currentColor"
+                class="w-6 h-6 stroke-indigo-500"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                />
+              </svg>
+              Koh Kong
+            </p>
+          </div>
+          <div class="pt-6 flex flex-col items-start justify-between h-[18rem]">
+            <p
+              class="font-medium cursor-pointer text-[1.4rem] capitalize py-2 px-8 border border-transparent duration-300 hover:border-indigo-500 bg-gray-50 rounded-[3.2rem] text-indigo-500"
+            >
+              #Koh Kong Krav Beach
+            </p>
+            <div>
+              <p class="text-[1.4rem] tracking-wide">
+                Another place at Koh Kong Krav Beach of 5
+              </p>
+              <p class="text-[1.4rem] tracking-wide">
+                So fresh and clean with clear water.
+              </p>
+            </div>
+            <div class="category flex items-center gap-3">
+              <p
+                class="py-1 text-[.8rem] tracking-wide cursor-pointer px-4 bg-gray-50 rounded-[3.2rem] border border-emerald-600 text-emerald-600"
+              >
+                #Beach
+              </p>
+              <p
+                class="py-1 text-[.8rem] tracking-wide cursor-pointer px-4 bg-gray-50 rounded-[3.2rem] border border-green-500 text-green-500"
+              >
+                #Forest
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="my-card-place">
+          <div
+            class="img relative rounded-md overflow-hidden inline-block group"
+          >
+            <img
+              src="../assets/images/boat.jpg"
+              alt="angkor wat"
+              class="w-full h-[35rem] object-cover object-center duration-[3s] hover:scale-150"
+            />
+            <p
+              class="py-2 flex location items-center gap-2 px-6 max-sm:top-6 max-sm:right-6 bg-white rounded-[3.2rem] absolute right-6 text-[1.2rem] font-medium -top-12 duration-700"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2.5"
+                stroke="currentColor"
+                class="w-6 h-6 stroke-indigo-500"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                />
+              </svg>
+              Koh Kong
+            </p>
+          </div>
+          <div class="pt-6 flex flex-col items-start justify-between h-[18rem]">
+            <p
+              class="font-medium cursor-pointer text-[1.4rem] capitalize py-2 px-8 border border-transparent duration-300 hover:border-indigo-500 bg-gray-50 rounded-[3.2rem] text-indigo-500"
+            >
+              #Koh Kong Krav Beach
+            </p>
+            <div>
+              <p class="text-[1.4rem] tracking-wide">
+                In the evening, we take time to relax on boat.
+              </p>
+              <p class="text-[1.4rem] tracking-wide">
+                That is amazing feeling.
+              </p>
+            </div>
+            <div class="category flex items-center gap-3">
+              <p
+                class="py-1 text-[.8rem] tracking-wide cursor-pointer px-4 bg-gray-50 rounded-[3.2rem] border border-emerald-600 text-emerald-600"
+              >
+                #Beach
+              </p>
+              <p
+                class="py-1 text-[.8rem] tracking-wide cursor-pointer px-4 bg-gray-50 rounded-[3.2rem] border border-green-500 text-green-500"
+              >
+                #Forest
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="my-card-place">
+          <div
+            class="img relative rounded-md overflow-hidden inline-block group"
+          >
+            <img
+              src="../assets/images/relax.jpg"
+              alt="angkor wat"
+              class="w-full h-[35rem] object-cover object-center duration-[3s] hover:scale-150"
+            />
+            <p
+              class="py-2 flex location items-center gap-2 px-6 max-sm:top-6 max-sm:right-6 bg-white rounded-[3.2rem] absolute right-6 text-[1.2rem] font-medium -top-12 duration-700"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2.5"
+                stroke="currentColor"
+                class="w-6 h-6 stroke-indigo-500"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                />
+              </svg>
+              Kampong Speu
+            </p>
+          </div>
+          <div class="pt-6 flex flex-col items-start justify-between h-[18rem]">
+            <p
+              class="font-medium cursor-pointer text-[1.4rem] capitalize py-2 px-8 border border-transparent duration-300 hover:border-indigo-500 bg-gray-50 rounded-[3.2rem] text-indigo-500"
+            >
+              #Knong Sampov Mountain
+            </p>
+            <div>
+              <p class="text-[1.4rem] tracking-wide">
+                When the sun start go away we climb the mountain.
+              </p>
+              <p class="text-[1.4rem] tracking-wide">
+                Watched the sunset with our friends.
+              </p>
+            </div>
+            <div class="category flex items-center gap-3">
+              <p
+                class="py-1 text-[.8rem] tracking-wide cursor-pointer px-4 bg-gray-50 rounded-[3.2rem] border border-blue-500 text-blue-500"
+              >
+                #Mountain
+              </p>
+              <p
+                class="py-1 text-[.8rem] tracking-wide cursor-pointer px-4 bg-gray-50 rounded-[3.2rem] border border-green-500 text-green-500"
+              >
+                #Forest
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="my-card-place">
+          <div
+            class="img relative rounded-md overflow-hidden inline-block group"
+          >
+            <img
+              src="../assets/images/fishing.jpg"
+              alt="angkor wat"
+              class="w-full h-[35rem] object-cover object-center duration-[3s] hover:scale-150"
+            />
+            <p
+              class="py-2 flex location items-center gap-2 px-6 max-sm:top-6 max-sm:right-6 bg-white rounded-[3.2rem] absolute right-6 text-[1.2rem] font-medium -top-12 duration-700"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2.5"
+                stroke="currentColor"
+                class="w-6 h-6 stroke-indigo-500"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                />
+              </svg>
+              Koh Kong
+            </p>
+          </div>
+          <div class="pt-6 flex flex-col items-start justify-between h-[18rem]">
+            <p
+              class="font-medium cursor-pointer text-[1.4rem] capitalize py-2 px-8 border border-transparent duration-300 hover:border-indigo-500 bg-gray-50 rounded-[3.2rem] text-indigo-500"
+            >
+              #Koh Kong Krav Beach
+            </p>
+            <div>
+              <p class="text-[1.4rem] tracking-wide">
+                Let's find some food haha. Ride on the boat and fishing.
+              </p>
+              <p class="text-[1.4rem] tracking-wide">
+                Boom!! So much enjoyable.
+              </p>
+            </div>
+            <div class="category flex items-center gap-3">
+              <p
+                class="py-1 text-[.8rem] tracking-wide cursor-pointer px-4 bg-gray-50 rounded-[3.2rem] border border-blue-500 text-blue-500"
+              >
+                #Beach
+              </p>
+              <p
+                class="py-1 text-[.8rem] tracking-wide cursor-pointer px-4 bg-gray-50 rounded-[3.2rem] border border-green-500 text-green-500"
+              >
+                #Forest
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="my-card-place">
+          <div
+            class="img relative rounded-md overflow-hidden inline-block group"
+          >
+            <img
+              src="../assets/images/tree.jpg"
+              alt="angkor wat"
+              class="w-full h-[35rem] object-cover object-center duration-[3s] hover:scale-150"
+            />
+            <p
+              class="py-2 flex location items-center gap-2 px-6 max-sm:top-6 max-sm:right-6 bg-white rounded-[3.2rem] absolute right-6 text-[1.2rem] font-medium -top-12 duration-700"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2.5"
+                stroke="currentColor"
+                class="w-6 h-6 stroke-indigo-500"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                />
+              </svg>
+              Siem Reab
+            </p>
+          </div>
+          <div class="pt-6 flex flex-col items-start justify-between h-[18rem]">
+            <p
+              class="font-medium cursor-pointer text-[1.4rem] capitalize py-2 px-8 border border-transparent duration-300 hover:border-indigo-500 bg-gray-50 rounded-[3.2rem] text-indigo-500"
+            >
+              #Angkor Wat Temple
+            </p>
+            <div>
+              <p class="text-[1.4rem] tracking-wide">
+                Are you tired ? Okay let's find a nice place at angkor wat.
+              </p>
+              <p class="text-[1.4rem] tracking-wide">
+                Take a seat relax and taking the fresh air.
+              </p>
+            </div>
+            <div class="category flex items-center gap-3">
+              <p
+                class="py-1 text-[.8rem] tracking-wide cursor-pointer px-4 bg-gray-50 rounded-[3.2rem] border border-indigo-500 text-indigo-500"
+              >
+                #Temple
+              </p>
+              <p
+                class="py-1 text-[.8rem] tracking-wide cursor-pointer px-4 bg-gray-50 rounded-[3.2rem] border border-green-500 text-green-500"
+              >
+                #Forest
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="my-card-place">
+          <div
+            class="img relative rounded-md overflow-hidden inline-block group"
+          >
+            <img
+              src="../assets/images/swim.jpg"
+              alt="angkor wat"
+              class="w-full h-[35rem] object-cover object-center duration-[3s] hover:scale-150"
+            />
+            <p
+              class="py-2 flex location items-center gap-2 px-6 max-sm:top-6 max-sm:right-6 bg-white rounded-[3.2rem] absolute right-6 text-[1.2rem] font-medium -top-12 duration-700"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2.5"
+                stroke="currentColor"
+                class="w-6 h-6 stroke-indigo-500"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                />
+              </svg>
+              Koh Kong
+            </p>
+          </div>
+          <div class="pt-6 flex flex-col items-start justify-between h-[18rem]">
+            <p
+              class="font-medium cursor-pointer text-[1.4rem] capitalize py-2 px-8 border border-transparent duration-300 hover:border-indigo-500 bg-gray-50 rounded-[3.2rem] text-indigo-500"
+            >
+              #Koh Kong Krav beach
+            </p>
+            <div>
+              <p class="text-[1.4rem] tracking-wide">
+                After we done with our trip. Let's swim together.
+              </p>
+              <p class="text-[1.4rem] tracking-wide">
+                Look at the water!! Fun time is about to start.
+              </p>
+            </div>
+            <div class="category flex items-center gap-3">
+              <p
+                class="py-1 text-[.8rem] tracking-wide cursor-pointer px-4 bg-gray-50 rounded-[3.2rem] border border-blue-500 text-blue-500"
+              >
+                #Beach
+              </p>
+              <p
+                class="py-1 text-[.8rem] tracking-wide cursor-pointer px-4 bg-gray-50 rounded-[3.2rem] border border-green-500 text-green-500"
+              >
+                #Forest
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <!-- footer  -->
+    <footer id="footer" class="bg-[#393939]">
+      <section class="my-container py-[8.4rem]">
+        <div class="my-top-footer flex justify-between items-center py-6">
+          <a
+            href="#"
+            class="text-white text-[3.2rem] font-semibold font-riot tracking-widest"
+            >Traveller</a
+          >
+          <a
+            href="#"
+            class="py-3 px-6 text-[1.6rem] bg-blue-400 text-white font-semibold"
+            >Get Started</a
+          >
+        </div>
+        <div
+          class="main-footer grid grid-cols-[repeat(auto-fit,minmax(25rem,auto))] gap-6 border-t-2 pt-6"
+        >
+          <div class="flex text-white flex-col gap-4 items-start">
+            <p class="font-semibold tracking-wider text-[1.8rem]">Product</p>
+            <p class="text-[1.4rem]">Shoes</p>
+            <p class="text-[1.4rem]">Tents</p>
+          </div>
+          <div class="flex text-white flex-col gap-4 items-start">
+            <p class="font-semibold tracking-wider text-[1.8rem]">Resource</p>
+            <p class="text-[1.4rem]">Learn</p>
+            <p class="text-[1.4rem]">FAQ</p>
+            <p class="text-[1.4rem]">Review</p>
+          </div>
+          <div class="flex text-white flex-col gap-4 items-start">
+            <p class="font-semibold tracking-wider text-[1.8rem]">Company</p>
+            <p class="text-[1.4rem]"><a href="#">About Us</a></p>
+            <p class="text-[1.4rem]">Join Team</p>
+          </div>
+          <div class="flex text-white flex-col gap-4 items-start">
+            <p class="font-semibold tracking-wider text-[1.8rem]">Address</p>
+            <p class="text-[1.4rem]">Stree #6A Highway</p>
+            <p class="text-[1.4rem]">Bakheng - Phnom Penh - Cambodia</p>
+            <p class="text-[1.4rem]">Contact - 0123-456-789</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

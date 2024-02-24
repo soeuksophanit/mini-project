@@ -35,6 +35,10 @@
   background-position: center;
 }
 
+.my-card-place:hover .location {
+  @apply top-6;
+}
+
 @media (max-width: 930px) {
   .article {
     grid-column: 1/2;
