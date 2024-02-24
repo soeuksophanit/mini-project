@@ -575,10 +575,6 @@ html {
   left: 1.5rem;
 }
 
-.left-\[10rem\] {
-  left: 10rem;
-}
-
 .left-\[50\%\] {
   left: 50%;
 }
@@ -595,20 +591,36 @@ html {
   top: 50%;
 }
 
-.z-10 {
-  z-index: 10;
+.bottom-0 {
+  bottom: 0px;
 }
 
-.z-\[9999\] {
-  z-index: 9999;
+.bottom-3 {
+  bottom: 0.75rem;
+}
+
+.left-3 {
+  left: 0.75rem;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .z-\[99999\] {
   z-index: 99999;
 }
 
+.z-\[9999\] {
+  z-index: 9999;
+}
+
 .col-span-2 {
   grid-column: span 2 / span 2;
+}
+
+.col-\[2\/3\] {
+  grid-column: 2/3;
 }
 
 .col-start-2 {
@@ -651,10 +663,6 @@ html {
   margin-bottom: 10rem;
 }
 
-.mb-\[4\.4rem\] {
-  margin-bottom: 4.4rem;
-}
-
 .mb-\[6\.4rem\] {
   margin-bottom: 6.4rem;
 }
@@ -663,8 +671,16 @@ html {
   margin-top: 2.5rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .mt-\[3\.2rem\] {
   margin-top: 3.2rem;
+}
+
+.box-border {
+  box-sizing: border-box;
 }
 
 .inline-block {
@@ -715,8 +731,8 @@ html {
   height: 55rem;
 }
 
-.h-\[70rem\] {
-  height: 70rem;
+.h-\[60rem\] {
+  height: 60rem;
 }
 
 .h-full {
@@ -822,6 +838,10 @@ html {
   grid-template-columns: repeat(auto-fit,minmax(25rem,auto));
 }
 
+.grid-cols-\[1fr_1fr_auto\] {
+  grid-template-columns: 1fr 1fr auto;
+}
+
 .grid-rows-3 {
   grid-template-rows: repeat(3, minmax(0, 1fr));
 }
@@ -898,6 +918,10 @@ html {
   align-self: flex-start;
 }
 
+.self-end {
+  align-self: flex-end;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -908,6 +932,10 @@ html {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .rounded-md {
@@ -1023,6 +1051,21 @@ html {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-slate-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
 .bg-center {
   background-position: center;
 }
@@ -1068,6 +1111,10 @@ html {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-10 {
@@ -1130,6 +1177,11 @@ html {
   padding-bottom: 8.4rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1166,6 +1218,10 @@ html {
   font-size: 1.8rem;
 }
 
+.text-\[2\.2rem\] {
+  font-size: 2.2rem;
+}
+
 .text-\[2\.4rem\] {
   font-size: 2.4rem;
 }
@@ -1200,6 +1256,14 @@ html {
 
 .text-\[7\.4rem\] {
   font-size: 7.4rem;
+}
+
+.text-\[1rem\] {
+  font-size: 1rem;
+}
+
+.text-\[1\.1rem\] {
+  font-size: 1.1rem;
 }
 
 .font-bold {
@@ -1292,6 +1356,11 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
@@ -1308,6 +1377,12 @@ html {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.backdrop-blur-\[\.5rem\] {
+  --tw-backdrop-blur: blur(.5rem);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .duration-1000 {
@@ -1359,18 +1434,27 @@ html {
 .hero-wrapper {
   background-image: linear-gradient(rgba(0, 0, 0, 0.79), rgba(0, 0, 0, 0.79)),
     url("../../../assets/images/hero-img.jpeg");
+  background-size: cover;
 }
 
 #footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../../../assets/images/footer-img.jpeg");
   background-position: center;
+  background-size: cover;
 }
 
 .camping {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../../../assets/images/camping.jpeg");
   background-position: center;
+  background-size: cover;
+}
+
+.register-with-us {
+  background-image: url("../../../assets/images/beach-2.jpeg");
+  background-position: left center;
+  background-size: cover;
 }
 
 .my-card-place:hover .location {
@@ -1773,6 +1857,12 @@ header nav.my-navbar + main span {
   }
 }
 
+@media (max-width: 700px) {
+  .max-\[700px\]\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
 @media not all and (min-width: 640px) {
   .max-sm\:bottom-6 {
     bottom: 1.5rem;
@@ -1832,6 +1922,10 @@ header nav.my-navbar + main span {
 
   .max-\[630px\]\:w-\[80\%\] {
     width: 80%;
+  }
+
+  .max-\[630px\]\:w-\[90\%\] {
+    width: 90%;
   }
 
   .max-\[630px\]\:grid-cols-1 {

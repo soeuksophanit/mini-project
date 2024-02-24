@@ -5,6 +5,7 @@
 const hamburger = document.querySelectorAll("#hamburger");
 const navbar = document.querySelectorAll("#nav");
 const link = document.querySelectorAll("#nav a");
+const btnSubmit = document.getElementById("btn");
 
 hamburger.forEach((ham) => {
   ham.addEventListener("click", () => {
@@ -20,4 +21,9 @@ link.forEach((li) => {
       nav.classList.toggle("my-navbar");
     });
   });
+});
+
+btnSubmit.addEventListener("click", (e) => {
+  e.preventDefault();
+  alert("Submit");
 });
