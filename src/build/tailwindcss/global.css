@@ -21,13 +21,17 @@
 .hero-wrapper {
   background-image: linear-gradient(rgba(0, 0, 0, 0.79), rgba(0, 0, 0, 0.79)),
     url("../../../assets/images/hero-img.jpeg");
-  /* background-attachment: fixed; */
 }
 
 #footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../../../assets/images/footer-img.jpeg");
-  /* background-attachment: fixed; */
+  background-position: center;
+}
+
+.camping {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../../assets/images/camping.jpeg");
   background-position: center;
 }
 
