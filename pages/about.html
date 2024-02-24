@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- google font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ------------------- -->
+    <!-- Riot font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap"
+      rel="stylesheet"
+    />
+    <!--  -->
+
+    <!-- link css  -->
+    <link rel="stylesheet" href="../src/css/global.css" />
+    <!-- --------- -->
+
+    <title>About Us</title>
+  </head>
+  <body class="bg-slate-100">
+    <!-- header section  -->
+    <header class="shadow-sm py-6 bg-white sticky top-0 z-10">
+      <section class="my-container flex justify-between items-center">
+        <main class="logo text-[2.6rem] font-medium">
+          <a
+            href="../index.html"
+            class="font-riot text-indigo-500 tracking-wider relative z-[99999]"
+            >Traveller</a
+          >
+        </main>
+        <nav
+          id="nav"
+          class="max-[930px]:fixed max-[930px]:inset-0 max-[930px]:duration-500 max-[930px]:translate-x-[-100%] max-[930px]:bg-white max-[930px]:z-50 max-[930px]:justify-center max-[930px]:items-center max-[930px]:flex"
+        >
+          <ul class="flex gap-10 items-center max-[930px]:flex-col">
+            <li
+              class="py-3 px-6 hover:duration-700 hover:border-indigo-500 hover:text-indigo-500 border-transparent border rounded-sm text-[1.6rem] font-medium"
+            >
+              <a href="./popular-places.html" class="relative"
+                >Popular Places</a
+              >
+            </li>
+            <li
+              class="py-3 px-6 hover:duration-700 hover:border-indigo-500 hover:text-indigo-500 border-transparent border rounded-sm text-[1.6rem] font-medium"
+            >
+              <a href="./travel-tip.html" class="relative">Travel Tips</a>
+            </li>
+            <li
+              class="py-3 px-6 hover:duration-700 hover:border-indigo-500 hover:text-indigo-500 border-transparent border rounded-sm text-[1.6rem] font-medium"
+            >
+              <a href="#" class="relative text-indigo-600">About Us</a>
+            </li>
+            <li>
+              <a
+                href="./register.html"
+                class="py-3 hidden max-[930px]:block max-[930px]:text-[#393939] px-6 border hover:border-indigo-500 hover:text-indigo-500 duration-300 text-white font-medium rounded-sm text-[1.6rem]"
+                >Register</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <main class="register flex items-center gap-10">
+          <a
+            href="./register.html"
+            class="py-3 max-[930px]:hidden px-6 border border-gray-900 hover:border-indigo-500 hover:text-indigo-500 duration-300 font-medium rounded-sm text-[1.6rem]"
+            >Register</a
+          >
+          <div
+            id="hamburger"
+            class="hamburger relative z-[9999] hidden max-[930px]:flex max-[930px]:flex-col items-end gap-2 group cursor-pointer"
+          >
+            <span
+              class="h-[.3rem] w-[3rem] rounded-md duration-300 bg-[#393939] group-hover:bg-indigo-500"
+            ></span>
+            <span
+              class="h-[.3rem] w-[3rem] rounded-md duration-500 group-hover:w-[2rem] bg-[#393939] group-hover:bg-indigo-500"
+            ></span>
+            <span
+              class="h-[.3rem] w-[3rem] rounded-md duration-700 group-hover:w-[1.5rem] bg-[#393939] group-hover:bg-indigo-500"
+            ></span>
+          </div>
+        </main>
+      </section>
+    </header>
+    <!-- --------------- -->
+    <!-- my profile  -->
+    <section
+      class="my-container bg-white px-10 pt-[6.4rem] pb-10 mb-[10rem] mt-10 rounded-md shadow-sm"
+    >
+      <main
+        class="profile flex justify-center gap-[6.2rem] max-[640px]:gap-[3.2rem] max-[870px]:flex-col max-[870px]:items-center"
+      >
+        <div
+          class="w-[10rem] h-[10rem] rounded-full overflow-hidden border-[.3rem] border-indigo-600"
+        >
+          <img
+            src="../assets/images/my-profile.JPG"
+            alt="my-profile"
+            class="object-cover p-2 rounded-full"
+          />
+        </div>
+        <div class="flex flex-col gap-6">
+          <div class="flex gap-10 items-center max-[640px]:flex-col">
+            <p
+              class="my-name capitalize cursor-default font-bold text-[3.4rem] max-[870px]:text-[2.8rem] tracking-wider flex items-center gap-3"
+            >
+              soeuk sophanit
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-[3.2rem] h-[3.2rem] fill-blue-500 stroke-white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"
+                />
+              </svg>
+            </p>
+            <div class="flex gap-6">
+              <a
+                target="_blank"
+                href="https://youtu.be/dQw4w9WgXcQ?feature=shared"
+                class="py-3 px-6 bg-indigo-600 text-white font-medium text-[1.6rem] max-[870px]:text-[1.4rem] rounded-md shadow-md duration-300 hover:shadow-indigo-500"
+              >
+                Follow
+              </a>
+              <a
+                target="_blank"
+                href="https://youtu.be/i5zQ7q0cMbs?feature=shared"
+                class="py-3 px-6 bg-indigo-600/15 text-indigo-700 font-medium text-[1.6rem] max-[870px]:text-[1.4rem] rounded-md duration-300 hover:shadow-indigo-500/20"
+              >
+                Message
+              </a>
+            </div>
+          </div>
+          <div class="flex gap-6 items-center">
+            <a
+              href="#"
+              class="flex gap-4 items-center text-gray-500 text-[1.2rem]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2.5"
+                stroke="currentColor"
+                class="w-6 h-6 stroke-red-500"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                />
+              </svg>
+              <span>Phnom Penh</span>
+              <span class="w-[.3rem] h-[.3rem] bg-gray-900 rounded-full"></span>
+              <span>Cambodia</span>
+            </a>
+          </div>
+          <div>
+            <p class="font-medium text-[1.6rem]">
+              Owner of
+              <a href="#" class="text-indigo-500 italic">Traveller</a>
+            </p>
+            <p class="font-medium text-[1.6rem]">
+              Studies at
+              <a
+                target="_blank"
+                href="https://www.facebook.com/ksignhrd?mibextid=kFxxJD"
+                class="text-indigo-500 italic"
+                >Korea Software HRD Center</a
+              >
+            </p>
+          </div>
+          <div class="w-[50rem] max-[640px]:w-[90%]">
+            <p class="text-[1.4rem] leading-[1.6] cursor-default tracking-wide">
+              Hello there all my gorgeous people on the internet!
+
+              <br />I am a student at
+              <span class="text-indigo-500 font-medium"
+                >KSHRD Center 12th Generation.</span
+              >
+              <br />
+              Nice to meet you 🍀 🥰 and this is my
+              <span class="text-indigo-500 font-medium">Mini Project</span> web
+              design.
+              <br />
+              Finished on
+              <span class="text-indigo-500 font-medium">24 - Feb - 2024</span>.
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-3 max-[630px]:grid-cols-2 w-fit justify-start text-center gap-6"
+          >
+            <p
+              class="py-2 px-6 bg-gray-50 rounded-[3.2rem] font-medium tracking-wide text-[.8rem] cursor-pointer duration-500 border border-indigo-500 text-indigo-500"
+            >
+              #Listening to Music
+            </p>
+            <p
+              class="py-2 px-6 bg-gray-50 rounded-[3.2rem] font-medium tracking-wide text-[.8rem] cursor-pointer duration-500 border border-emerald-500 text-emerald-500"
+            >
+              #Playing Sports
+            </p>
+            <p
+              class="py-2 px-6 bg-gray-50 rounded-[3.2rem] font-medium tracking-wide text-[.8rem] cursor-pointer duration-500 border border-red-400 text-red-400"
+            >
+              #Eat and Sleep
+            </p>
+          </div>
+        </div>
+      </main>
+      <main class="social-like my-10 flex gap-2 items-center">
+        <button
+          class="py-2 px-8 font-bold text-[1.2rem] bg-gray-100 rounded-[3.2rem] text-indigo-500"
+        >
+          7 Photos
+        </button>
+        <button
+          class="py-2 px-8 duration-300 font-medium text-[1.2rem] hover:bg-gray-100 hover:text-indigo-500 rounded-[3.2rem]"
+        >
+          1 Gallery
+        </button>
+        <button
+          class="py-2 px-8 duration-300 font-medium text-[1.2rem] hover:bg-gray-100 hover:text-indigo-500 rounded-[3.2rem]"
+        >
+          Overview
+        </button>
+      </main>
+      <main
+        class="my-gallery grid grid-cols-4 grid-rows-3 min-h-[100rem] gap-4 max-[910px]:grid-cols-2 max-[600px]:grid-cols-1"
+      >
+        <div
+          class="col-span-2 max-[910px]:col-[1/2] max-[600px]:col-[1/2] max-[600px]:row-[1/2] rounded-md overflow-hidden relative group"
+        >
+          <img
+            src="../assets/images/cover-kk.PNG"
+            alt="my picture"
+            class="w-full h-full object-cover object-center hover:scale-125 duration-[2s]"
+          />
+          <p
+            class="py-2 px-6 max-sm:top-6 max-sm:right-6 bg-white rounded-[3.2rem] absolute right-6 text-[1.2rem] flex items-center gap-2 font-medium -top-12 group-hover:top-6 duration-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="w-6 h-6 stroke-indigo-500"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+              />
+            </svg>
+            Koh Kong Krav
+          </p>
+        </div>
+        <div
+          class="col-span-2 max-[910px]:col-span-1 max-[600px]:col-[1/2] max-[600px]:row-[2/3] rounded-md overflow-hidden relative group"
+        >
+          <img
+            src="../assets/images/team.jpg"
+            alt="my picture"
+            class="w-full h-full object-cover object-center duration-[2s] hover:scale-125"
+          />
+          <p
+            class="py-2 px-6 max-sm:top-6 max-sm:right-6 bg-white rounded-[3.2rem] absolute right-6 text-[1.2rem] flex items-center gap-2 font-medium -top-12 group-hover:top-6 duration-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="w-6 h-6 stroke-indigo-500"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+              />
+            </svg>
+            Knong Psar
+          </p>
+        </div>
+        <div
+          class="rounded-md max-[910px]:col-[2/3] max-[600px]:col-[1/2] max-[600px]:row-[3/4] overflow-hidden relative group"
+        >
+          <img
+            src="../assets/images/me.jpg"
+            alt="my picture"
+            class="w-full h-full object-cover object-center duration-[2s] hover:scale-125"
+          />
+          <p
+            class="py-2 px-6 max-sm:top-6 max-sm:right-6 bg-white rounded-[3.2rem] absolute right-6 text-[1.2rem] flex items-center gap-2 font-medium -top-12 group-hover:top-6 duration-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="w-6 h-6 stroke-indigo-500"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+              />
+            </svg>
+            Knong Psar
+          </p>
+        </div>
+        <div
+          class="col-start-2 col-end-4 max-[910px]:col-[1/2] max-[910px]:row-[2/3] max-[600px]:col-[1/2] max-[600px]:row-[4/5] rounded-md overflow-hidden relative group"
+        >
+          <img
+            src="../assets/images/knong-psar.jpg"
+            alt="my picture"
+            class="w-full h-full object-cover object-center duration-[2s] hover:scale-125"
+          />
+          <p
+            class="py-2 px-6 max-sm:top-6 max-sm:right-6 bg-white rounded-[3.2rem] absolute right-6 text-[1.2rem] flex items-center gap-2 font-medium -top-12 group-hover:top-6 duration-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="w-6 h-6 stroke-indigo-500"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+              />
+            </svg>
+            Knong Psar
+          </p>
+        </div>
+        <div
+          class="rounded-md max-[910px]:col-[1/2] max-[600px]:col-[1/2] max-[600px]:row-[5/6] overflow-hidden relative group"
+        >
+          <img
+            src="../assets/images/stand-alone.jpg"
+            alt="my picture"
+            class="w-full h-full object-cover object-left duration-[2s] hover:scale-125"
+          />
+          <p
+            class="py-2 px-6 max-sm:top-6 max-sm:right-6 bg-white rounded-[3.2rem] absolute right-6 text-[1.2rem] flex items-center gap-2 font-medium -top-12 group-hover:top-6 duration-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="w-6 h-6 stroke-indigo-500"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+              />
+            </svg>
+            Knong Psar
+          </p>
+        </div>
+        <div
+          class="col-span-2 max-[910px]:col-[2/3] max-[600px]:col-[1/2] max-[600px]:row-[6/7] rounded-md overflow-hidden relative group"
+        >
+          <img
+            src="../assets/images/kohkong-1.JPG"
+            alt="my picture"
+            class="w-full h-full object-cover object-center duration-[2s] hover:scale-125"
+          />
+          <p
+            class="py-2 px-6 max-sm:top-6 max-sm:right-6 bg-white rounded-[3.2rem] absolute right-6 text-[1.2rem] flex items-center gap-2 font-medium -top-12 group-hover:top-6 duration-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="w-6 h-6 stroke-indigo-500"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+              />
+            </svg>
+            Koh Kong Krav
+          </p>
+        </div>
+        <div
+          class="rounded-md overflow-hidden relative group col-span-2 max-[600px]:col-[1/2]"
+        >
+          <img
+            src="../assets/images/heart.JPG"
+            alt="my picture"
+            class="w-full h-full object-cover object-center duration-[2s] hover:scale-125"
+          />
+          <p
+            class="py-2 px-6 max-sm:top-6 max-sm:right-6 bg-white rounded-[3.2rem] absolute right-6 text-[1.2rem] flex items-center gap-2 font-medium -top-12 group-hover:top-6 duration-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="w-6 h-6 stroke-indigo-500"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+              />
+            </svg>
+            Koh Kong Krav
+          </p>
+        </div>
+      </main>
+    </section>
+
+    <!-- footer  -->
+    <footer id="footer" class="bg-[#393939]">
+      <section class="my-container py-[8.4rem]">
+        <div class="my-top-footer flex justify-between items-center py-6">
+          <a
+            href="#"
+            class="text-white text-[3.2rem] font-semibold font-riot tracking-widest"
+            >Traveller</a
+          >
+          <a
+            href="./register.html"
+            class="py-3 px-6 text-[1.6rem] bg-blue-400 text-white font-semibold"
+            >Get Started</a
+          >
+        </div>
+        <div
+          class="main-footer grid grid-cols-[repeat(auto-fit,minmax(25rem,auto))] gap-6 border-t-2 pt-6"
+        >
+          <div class="flex text-white flex-col gap-4 items-start">
+            <p class="font-semibold tracking-wider text-[1.8rem]">Product</p>
+            <p class="text-[1.4rem]">Shoes</p>
+            <p class="text-[1.4rem]">Tents</p>
+          </div>
+          <div class="flex text-white flex-col gap-4 items-start">
+            <p class="font-semibold tracking-wider text-[1.8rem]">Resource</p>
+            <p class="text-[1.4rem]">Learn</p>
+            <p class="text-[1.4rem]">FAQ</p>
+            <p class="text-[1.4rem]">Review</p>
+          </div>
+          <div class="flex text-white flex-col gap-4 items-start">
+            <p class="font-semibold tracking-wider text-[1.8rem]">Company</p>
+            <p class="text-[1.4rem]"><a href="#">About Us</a></p>
+            <p class="text-[1.4rem]">Join Team</p>
+          </div>
+          <div class="flex text-white flex-col gap-4 items-start">
+            <p class="font-semibold tracking-wider text-[1.8rem]">Address</p>
+            <p class="text-[1.4rem]">Stree #6A Highway</p>
+            <p class="text-[1.4rem]">Bakheng - Phnom Penh - Cambodia</p>
+            <p class="text-[1.4rem]">Contact - 0123-456-789</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>

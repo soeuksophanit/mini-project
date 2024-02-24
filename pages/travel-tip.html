@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- google font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ------------------- -->
+    <!-- Riot font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap"
+      rel="stylesheet"
+    />
+    <!--  -->
+
+    <!-- link css  -->
+    <link rel="stylesheet" href="../src/css/global.css" />
+    <!-- --------- -->
+
+    <title>Travel Tips</title>
+  </head>
+  <body class="bg-slate-100">
+    <!-- header section  -->
+    <header class="shadow-sm py-6 bg-white sticky top-0 z-10">
+      <section class="my-container flex justify-between items-center">
+        <main class="logo text-[2.6rem] font-medium">
+          <a
+            href="../index.html"
+            class="font-riot text-indigo-500 tracking-wider relative z-[99999]"
+            >Traveller</a
+          >
+        </main>
+        <nav
+          id="nav"
+          class="max-[930px]:fixed max-[930px]:inset-0 max-[930px]:duration-500 max-[930px]:translate-x-[-100%] max-[930px]:bg-white max-[930px]:z-50 max-[930px]:justify-center max-[930px]:items-center max-[930px]:flex"
+        >
+          <ul class="flex gap-10 items-center max-[930px]:flex-col">
+            <li
+              class="py-3 px-6 hover:duration-700 hover:border-indigo-500 hover:text-indigo-500 border-transparent border rounded-sm text-[1.6rem] font-medium"
+            >
+              <a href="./popular-places.html" class="relative"
+                >Popular Places</a
+              >
+            </li>
+            <li
+              class="py-3 px-6 hover:duration-700 hover:border-indigo-500 hover:text-indigo-500 border-transparent border rounded-sm text-[1.6rem] font-medium"
+            >
+              <a href="./travel-tip.html" class="relative text-indigo-600"
+                >Travel Tips</a
+              >
+            </li>
+            <li
+              class="py-3 px-6 hover:duration-700 hover:border-indigo-500 hover:text-indigo-500 border-transparent border rounded-sm text-[1.6rem] font-medium"
+            >
+              <a href="../pages/about.html" class="relative">About Us</a>
+            </li>
+            <li>
+              <a
+                href="./register.html"
+                class="py-3 hidden max-[930px]:block max-[930px]:text-[#393939] px-6 border hover:border-indigo-500 hover:text-indigo-500 duration-300 text-white font-medium rounded-sm text-[1.6rem]"
+                >Register</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <main class="register flex items-center gap-10">
+          <a
+            href="./register.html"
+            class="py-3 max-[930px]:hidden px-6 border border-gray-900 hover:border-indigo-500 hover:text-indigo-500 duration-300 font-medium rounded-sm text-[1.6rem]"
+            >Register</a
+          >
+          <div
+            id="hamburger"
+            class="hamburger relative z-[9999] hidden max-[930px]:flex max-[930px]:flex-col items-end gap-2 group cursor-pointer"
+          >
+            <span
+              class="h-[.3rem] w-[3rem] rounded-md duration-300 bg-[#393939] group-hover:bg-indigo-500"
+            ></span>
+            <span
+              class="h-[.3rem] w-[3rem] rounded-md duration-500 group-hover:w-[2rem] bg-[#393939] group-hover:bg-indigo-500"
+            ></span>
+            <span
+              class="h-[.3rem] w-[3rem] rounded-md duration-700 group-hover:w-[1.5rem] bg-[#393939] group-hover:bg-indigo-500"
+            ></span>
+          </div>
+        </main>
+      </section>
+    </header>
+    <!-- --------------- -->
+
+    <!-- tips intro section  -->
+    <section
+      class="my-container relative camping h-[60rem] px-10 pt-[6.4rem] pb-10 mb-[10rem] mt-10 rounded-md shadow-sm"
+    >
+      <div
+        class="w-[60rem] max-[630px]:w-[70%] text-white flex flex-col gap-6 items-center p-10 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
+      >
+        <h4
+          class="uppercase text-center max-[630px]:text-[3.2rem] tracking-wide cursor-default text-[4.2rem] font-bold"
+        >
+          what we need
+        </h4>
+        <h4
+          class="uppercase text-center max-[630px]:text-[4.2rem] tracking-wide cursor-default text-[5.2rem] font-bold"
+        >
+          before taking a trip
+        </h4>
+        <a
+          href="#tips"
+          class="py-4 px-[3.2rem] rounded-[3.2rem] bg-indigo-500 font-semibold tracking-widest text-[1.8rem]"
+          >Explore</a
+        >
+      </div>
+    </section>
+
+    <!-- get started tip -->
+    <section
+      id="tips"
+      class="my-container p-10 bg-white rounded-md my-[6.4rem] grid grid-cols-2 gap-10 shadow-sm max-[630px]:grid-cols-1"
+    >
+      <div>
+        <img
+          src="../assets/images/planing.jpeg"
+          alt="planing"
+          class="h-[30rem] w-full object-cover rounded-md object-center"
+        />
+      </div>
+      <div class="flex justify-center items-center rounded-md">
+        <div
+          class="w-[35rem] max-[630px]:w-[80%] max-[630px]:text-center max-[630px]:gap-2 flex flex-col gap-10"
+        >
+          <h4 class="font-bold tracking-wider text-[2.4rem]">
+            Research and Plan Ahead
+          </h4>
+          <p class="text-[1.6rem] tracking-wider">
+            Research your destination thoroughly to understand its culture,
+            customs, weather, and any necessary travel documentation. Plan your
+            itinerary, but also allow for flexibility.
+          </p>
+        </div>
+      </div>
+      <div class="flex justify-center items-center max-[630px]:row-start-4">
+        <div
+          class="w-[35rem] max-[630px]:w-[80%] max-[630px]:text-center max-[630px]:gap-2 flex flex-col gap-10"
+        >
+          <h4 class="font-bold tracking-wider text-[2.4rem]">
+            Pack Light and Smart
+          </h4>
+          <p class="text-[1.6rem] tracking-wider">
+            Pack versatile clothing suitable for the destination's climate and
+            activities. Minimize the number of items you bring to avoid
+            overpacking, and consider essentials like medications, chargers, and
+            travel-sized toiletries.
+          </p>
+        </div>
+      </div>
+      <div>
+        <img
+          src="../assets/images/packing.jpeg"
+          alt="planing"
+          class="h-[30rem] w-full object-cover rounded-md object-center"
+        />
+      </div>
+      <div>
+        <img
+          src="../assets/images/healthy.jpeg"
+          alt="planing"
+          class="h-[30rem] w-full object-cover rounded-md object-center"
+        />
+      </div>
+      <div class="flex justify-center items-center">
+        <div
+          class="w-[35rem] max-[630px]:w-[80%] max-[630px]:text-center max-[630px]:gap-2 flex flex-col gap-10"
+        >
+          <h4 class="font-bold tracking-wider text-[2.4rem]">Stay Healthy</h4>
+          <p class="text-[1.6rem] tracking-wider">
+            Prioritize your health by staying hydrated, eating balanced meals,
+            and getting enough rest. Carry necessary medications and familiarize
+            yourself with local healthcare options.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer  -->
+    <footer id="footer" class="bg-[#393939]">
+      <section class="my-container py-[8.4rem]">
+        <div class="my-top-footer flex justify-between items-center py-6">
+          <a
+            href="#"
+            class="text-white text-[3.2rem] font-semibold font-riot tracking-widest"
+            >Traveller</a
+          >
+          <a
+            href="./register.html"
+            class="py-3 px-6 text-[1.6rem] bg-blue-400 text-white font-semibold"
+            >Get Started</a
+          >
+        </div>
+        <div
+          class="main-footer grid grid-cols-[repeat(auto-fit,minmax(25rem,auto))] gap-6 border-t-2 pt-6"
+        >
+          <div class="flex text-white flex-col gap-4 items-start">
+            <p class="font-semibold tracking-wider text-[1.8rem]">Product</p>
+            <p class="text-[1.4rem]">Shoes</p>
+            <p class="text-[1.4rem]">Tents</p>
+          </div>
+          <div class="flex text-white flex-col gap-4 items-start">
+            <p class="font-semibold tracking-wider text-[1.8rem]">Resource</p>
+            <p class="text-[1.4rem]">Learn</p>
+            <p class="text-[1.4rem]">FAQ</p>
+            <p class="text-[1.4rem]">Review</p>
+          </div>
+          <div class="flex text-white flex-col gap-4 items-start">
+            <p class="font-semibold tracking-wider text-[1.8rem]">Company</p>
+            <p class="text-[1.4rem]"><a href="#">About Us</a></p>
+            <p class="text-[1.4rem]">Join Team</p>
+          </div>
+          <div class="flex text-white flex-col gap-4 items-start">
+            <p class="font-semibold tracking-wider text-[1.8rem]">Address</p>
+            <p class="text-[1.4rem]">Stree #6A Highway</p>
+            <p class="text-[1.4rem]">Bakheng - Phnom Penh - Cambodia</p>
+            <p class="text-[1.4rem]">Contact - 0123-456-789</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>

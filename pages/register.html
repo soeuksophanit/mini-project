@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- google font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ------------------- -->
+    <!-- Riot font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap"
+      rel="stylesheet"
+    />
+    <!--  -->
+
+    <!-- link css  -->
+    <link rel="stylesheet" href="../src/css/global.css" />
+    <!-- --------- -->
+
+    <title>Register</title>
+  </head>
+  <body class="bg-slate-100">
+    <!-- header section  -->
+    <header class="shadow-sm py-6 bg-white sticky top-0 z-10">
+      <section class="my-container flex justify-between items-center">
+        <main class="logo text-[2.6rem] font-medium">
+          <a
+            href="../index.html"
+            class="font-riot text-indigo-500 tracking-wider relative z-[99999]"
+            >Traveller</a
+          >
+        </main>
+        <nav
+          id="nav"
+          class="max-[930px]:fixed max-[930px]:inset-0 max-[930px]:duration-500 max-[930px]:translate-x-[-100%] max-[930px]:bg-white max-[930px]:z-50 max-[930px]:justify-center max-[930px]:items-center max-[930px]:flex"
+        >
+          <ul class="flex gap-10 items-center max-[930px]:flex-col">
+            <li
+              class="py-3 px-6 hover:duration-700 hover:border-indigo-500 hover:text-indigo-500 border-transparent border rounded-sm text-[1.6rem] font-medium"
+            >
+              <a href="./popular-places.html" class="relative"
+                >Popular Places</a
+              >
+            </li>
+            <li
+              class="py-3 px-6 hover:duration-700 hover:border-indigo-500 hover:text-indigo-500 border-transparent border rounded-sm text-[1.6rem] font-medium"
+            >
+              <a href="./travel-tip.html" class="relative">Travel Tips</a>
+            </li>
+            <li
+              class="py-3 px-6 hover:duration-700 hover:border-indigo-500 hover:text-indigo-500 border-transparent border rounded-sm text-[1.6rem] font-medium"
+            >
+              <a href="./about.html" class="relative">About Us</a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="py-3 hidden text-indigo-600 max-[930px]:block px-6 border border-indigo-500 duration-300 font-medium rounded-sm text-[1.6rem]"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <main class="register flex items-center gap-10">
+          <a
+            href="#"
+            class="py-3 max-[930px]:hidden px-6 border border-indigo-500 text-indigo-500 duration-300 font-medium rounded-sm text-[1.6rem]"
+            >Register</a
+          >
+          <div
+            id="hamburger"
+            class="hamburger relative z-[9999] hidden max-[930px]:flex max-[930px]:flex-col items-end gap-2 group cursor-pointer"
+          >
+            <span
+              class="h-[.3rem] w-[3rem] rounded-md duration-300 bg-[#393939] group-hover:bg-indigo-500"
+            ></span>
+            <span
+              class="h-[.3rem] w-[3rem] rounded-md duration-500 group-hover:w-[2rem] bg-[#393939] group-hover:bg-indigo-500"
+            ></span>
+            <span
+              class="h-[.3rem] w-[3rem] rounded-md duration-700 group-hover:w-[1.5rem] bg-[#393939] group-hover:bg-indigo-500"
+            ></span>
+          </div>
+        </main>
+      </section>
+    </header>
+    <!-- --------------- -->
+
+    <!-- Register intro section  -->
+    <section
+      class="my-container relative register-with-us h-[60rem] px-10 pt-[6.4rem] pb-10 mb-[10rem] mt-10 rounded-md shadow-sm"
+    >
+      <div
+        class="w-[60rem] max-[630px]:w-[90%] backdrop-blur-[.5rem] rounded-lg text-white flex flex-col gap-6 items-center p-10 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
+      >
+        <h4
+          class="uppercase font-riot text-center max-[630px]:text-[3.2rem] tracking-wider cursor-default text-[4.2rem] font-bold"
+        >
+          Register
+        </h4>
+        <h4
+          class="uppercase text-center max-[630px]:text-[4.2rem] tracking-wide cursor-default text-[5.2rem] font-bold"
+        >
+          and join with us
+        </h4>
+        <h4
+          class="uppercase text-center max-[630px]:text-[3.2rem] tracking-wide cursor-default text-[4.2rem] font-bold"
+        >
+          with a lot of benifits
+        </h4>
+        <a
+          href="#form"
+          class="py-4 px-[3.2rem] rounded-[3.2rem] max-[630px]:text-1.6rem bg-indigo-500 font-semibold tracking-widest text-[1.8rem]"
+          >Take me to the form</a
+        >
+      </div>
+    </section>
+
+    <!-- testimonials  -->
+    <section
+      class="my-container bg-white p-10 rounded-md shadow-sm grid grid-cols-[repeat(auto-fit,minmax(25rem,auto))] gap-10"
+    >
+      <div class="user-card">
+        <div class="inline-block overflow-hidden relative w-full">
+          <img
+            class="object-cover object-center w-full h-[30rem] rounded-md"
+            src="../assets/images/my-profile.JPG"
+            alt="my-profile"
+          />
+          <p
+            class="flex gap-2 items-center py-2 px-4 bg-gray-800 text-white absolute bottom-3 left-3 rounded-[3.2rem] tracking-wider font-medium"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+              />
+            </svg>
+            <span>Sophanit</span>
+            <span class="w-[.3rem] h-[.3rem] bg-white rounded-full"></span>
+            <span>CEO</span>
+          </p>
+        </div>
+        <div class="pt-6 flex flex-col gap-6">
+          <div>
+            <p class="text-[1.4rem] tracking-wider">
+              Register with us to get fast notifications.
+            </p>
+          </div>
+          <div>
+            <p class="text-[1.4rem] tracking-wider text-emerald-500">
+              Soeuk Sophanit
+            </p>
+            <p class="text-[1.1rem] tracking-wider text-gray-500">
+              Foundation and CEO of Traveller
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="user-card">
+        <div class="inline-block overflow-hidden relative w-full">
+          <img
+            class="object-cover object-center w-full h-[30rem] rounded-md"
+            src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=2662&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="my-profile"
+          />
+          <p
+            class="flex gap-2 items-center py-2 px-4 bg-gray-800 text-white absolute bottom-3 left-3 rounded-[3.2rem] tracking-wider font-medium"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+              />
+            </svg>
+            <span>John Marison</span>
+            <span class="w-[.3rem] h-[.3rem] bg-white rounded-full"></span>
+            <span>Support</span>
+          </p>
+        </div>
+        <div class="pt-6 flex flex-col gap-6">
+          <div>
+            <p class="text-[1.4rem] tracking-wider">
+              The best platform to find the best places
+            </p>
+          </div>
+          <div>
+            <p class="text-[1.4rem] tracking-wider text-emerald-500">
+              John Marison
+            </p>
+            <p class="text-[1.1rem] tracking-wider text-gray-500">
+              Senior Staff
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="user-card">
+        <div class="inline-block overflow-hidden relative w-full">
+          <img
+            class="object-cover object-center w-full h-[30rem] rounded-md"
+            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="my-profile"
+          />
+          <p
+            class="flex gap-2 items-center py-2 px-4 bg-gray-800 text-white absolute bottom-3 left-3 rounded-[3.2rem] tracking-wider font-medium"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+              />
+            </svg>
+            <span>William Graciee</span>
+            <span class="w-[.3rem] h-[.3rem] bg-white rounded-full"></span>
+            <span>CFO</span>
+          </p>
+        </div>
+        <div class="pt-6 flex flex-col gap-6">
+          <div>
+            <p class="text-[1.4rem] tracking-wider">
+              Find your favourite place with
+              <span class="text-indigo-500">Traveller</span>
+            </p>
+          </div>
+          <div>
+            <p class="text-[1.4rem] tracking-wider text-emerald-500">
+              William Graciee
+            </p>
+            <p class="text-[1.1rem] tracking-wider text-gray-500">
+              CFO of Traveller
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="form"
+      class="my-container p-10 my-[6.4rem] rounded-md shadow-sm bg-white"
+    >
+      <h4 class="uppercase font-medium text-[2.2rem] tracking-wider">
+        Fill your <span class="text-indigo-500">information</span> below
+      </h4>
+      <form
+        class="grid grid-cols-[1fr_1fr_auto] max-[700px]:grid-cols-1 gap-10 mt-6 tracking-wider"
+      >
+        <div class="flex flex-col gap-4">
+          <label for="name" class="text-[1.6rem] self-start">Username</label>
+          <input
+            class="border border-indigo-500 box-border p-4 text-[1.6rem] rounded-lg"
+            type="text"
+            id="name"
+            placeholder="enter your username "
+          />
+        </div>
+        <div class="flex flex-col gap-4">
+          <label for="email" class="text-[1.6rem] self-start">Email</label>
+          <input
+            class="border border-indigo-500 box-border p-4 text-[1.6rem] rounded-lg"
+            type="email"
+            id="email"
+            placeholder="enter your email "
+          />
+        </div>
+        <div class="flex items-end">
+          <button
+            id="btn"
+            type="submit"
+            class="bg-blue-500 w-fit text-white py-4 px-6 rounded-lg text-[1.6rem]"
+          >
+            Register
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- footer  -->
+    <footer id="footer" class="bg-[#393939]">
+      <section class="my-container py-[8.4rem]">
+        <div class="my-top-footer flex justify-between items-center py-6">
+          <a
+            href="#"
+            class="text-white text-[3.2rem] font-semibold font-riot tracking-widest"
+            >Traveller</a
+          >
+          <a
+            href="#"
+            class="py-3 px-6 text-[1.6rem] bg-blue-400 text-white font-semibold"
+            >Get Started</a
+          >
+        </div>
+        <div
+          class="main-footer grid grid-cols-[repeat(auto-fit,minmax(25rem,auto))] gap-6 border-t-2 pt-6"
+        >
+          <div class="flex text-white flex-col gap-4 items-start">
+            <p class="font-semibold tracking-wider text-[1.8rem]">Product</p>
+            <p class="text-[1.4rem]">Shoes</p>
+            <p class="text-[1.4rem]">Tents</p>
+          </div>
+          <div class="flex text-white flex-col gap-4 items-start">
+            <p class="font-semibold tracking-wider text-[1.8rem]">Resource</p>
+            <p class="text-[1.4rem]">Learn</p>
+            <p class="text-[1.4rem]">FAQ</p>
+            <p class="text-[1.4rem]">Review</p>
+          </div>
+          <div class="flex text-white flex-col gap-4 items-start">
+            <p class="font-semibold tracking-wider text-[1.8rem]">Company</p>
+            <p class="text-[1.4rem]"><a href="#">About Us</a></p>
+            <p class="text-[1.4rem]">Join Team</p>
+          </div>
+          <div class="flex text-white flex-col gap-4 items-start">
+            <p class="font-semibold tracking-wider text-[1.8rem]">Address</p>
+            <p class="text-[1.4rem]">Stree #6A Highway</p>
+            <p class="text-[1.4rem]">Bakheng - Phnom Penh - Cambodia</p>
+            <p class="text-[1.4rem]">Contact - 0123-456-789</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>

@@ -6,5 +6,68 @@
   html {
     font-size: 62.5%;
     font-family: "Poppins", sans-serif;
+    color: #393939;
+    scroll-behavior: smooth;
+  }
+}
+
+.font-riot {
+  font-family: "Protest Riot", sans-serif;
+}
+
+.my-container {
+  @apply w-[110rem] mx-auto max-[1130px]:w-[90rem] max-[930px]:w-[90%];
+}
+
+.hero-wrapper {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.79), rgba(0, 0, 0, 0.79)),
+    url("../../../assets/images/hero-img.jpeg");
+  background-size: cover;
+}
+
+#footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../../assets/images/footer-img.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+.camping {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../../assets/images/camping.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+.register-with-us {
+  background-image: url("../../../assets/images/beach-2.jpeg");
+  background-position: left center;
+  background-size: cover;
+}
+
+.my-card-place:hover .location {
+  @apply top-6;
+}
+
+.my-gallery img {
+  @apply max-[600px]:h-[35rem];
+}
+
+nav.my-navbar {
+  @apply translate-x-0;
+}
+
+header nav span {
+  @apply bg-white;
+}
+
+header nav.my-navbar + main span {
+  @apply bg-[#393939];
+}
+
+@media (max-width: 930px) {
+  .article {
+    grid-column: 1/2;
+    grid-row: 2/3;
   }
 }

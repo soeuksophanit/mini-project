@@ -12,6 +12,14 @@
       rel="stylesheet"
     />
     <!-- ------------------- -->
+    <!-- Riot font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap"
+      rel="stylesheet"
+    />
+    <!--  -->
 
     <!-- link css  -->
     <link rel="stylesheet" href="./src/css/global.css" />
@@ -19,5 +27,477 @@
 
     <title>Mini Project</title>
   </head>
-  <body></body>
+  <body class="bg-slate-100">
+    <!-- hero section  -->
+    <section
+      class="rounded-sm hero-wrapper h-screen min-h-[700px] bg-center relative"
+    >
+      <!-- header section  -->
+      <header class="shadow-sm py-6">
+        <section class="my-container flex justify-between items-center">
+          <main class="logo text-[2.6rem] text-white font-medium">
+            <a href="#" class="font-riot tracking-wider relative z-[9999]"
+              >Traveller</a
+            >
+          </main>
+          <nav
+            id="nav"
+            class="max-[930px]:fixed max-[930px]:inset-0 max-[930px]:duration-500 max-[930px]:translate-x-[-100%] max-[930px]:bg-white max-[930px]:z-50 max-[930px]:justify-center max-[930px]:items-center max-[930px]:flex"
+          >
+            <ul class="flex gap-10 items-center max-[930px]:flex-col">
+              <li
+                class="py-3 px-6 hover:duration-700 hover:border-white max-[930px]:hover:border-[#393939] border-transparent border rounded-sm text-[1.6rem] font-medium text-white"
+              >
+                <a
+                  href="./pages/popular-places.html"
+                  class="relative max-[930px]:text-[#393939] max-[930px]:hover:text-indigo-500"
+                  >Popular Places</a
+                >
+              </li>
+              <li
+                class="py-3 px-6 hover:duration-700 hover:border-white max-[930px]:hover:border-[#393939] border-transparent border rounded-sm text-[1.6rem] font-medium text-white"
+              >
+                <a
+                  href="./pages/travel-tip.html"
+                  class="relative max-[930px]:text-[#393939] max-[930px]:hover:text-indigo-500"
+                  >Travel Tips</a
+                >
+              </li>
+              <li
+                class="py-3 px-6 hover:duration-700 hover:border-white max-[930px]:hover:border-[#393939] border-transparent border rounded-sm text-[1.6rem] font-medium text-white"
+              >
+                <a
+                  href="./pages/about.html"
+                  class="relative max-[930px]:text-[#393939] max-[930px]:hover:text-indigo-500"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./pages/register.html"
+                  class="py-3 hidden max-[930px]:block max-[930px]:text-[#393939] px-6 border hover:border-indigo-500 hover:text-indigo-500 duration-300 text-white font-medium rounded-sm text-[1.6rem]"
+                  >Register</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <main class="register flex items-center gap-10">
+            <a
+              href="./pages/register.html"
+              class="py-3 max-[930px]:hidden px-6 border duration-300 text-white font-medium rounded-sm text-[1.6rem]"
+              >Register</a
+            >
+            <div
+              id="hamburger"
+              class="hamburger relative z-[9999] hidden max-[930px]:flex max-[930px]:flex-col items-end gap-2 group cursor-pointer"
+            >
+              <span
+                class="h-[.3rem] w-[3rem] rounded-md duration-300 bg-white group-hover:bg-indigo-500"
+              ></span>
+              <span
+                class="h-[.3rem] w-[3rem] rounded-md duration-500 group-hover:w-[2rem] bg-white group-hover:bg-indigo-500"
+              ></span>
+              <span
+                class="h-[.3rem] w-[3rem] rounded-md duration-700 group-hover:w-[1.5rem] bg-white group-hover:bg-indigo-500"
+              ></span>
+            </div>
+          </main>
+        </section>
+      </header>
+      <!-- --------------- -->
+
+      <!-- hero describe  -->
+      <main
+        class="hero-describe w-[100rem] max-[1130px]:w-[90rem] max-[930px]:w-[90%] absolute top-[50%] flex flex-col items-center gap-20 left-[50%] p-6 translate-x-[-50%] translate-y-[-50%]"
+      >
+        <div class="text-center flex flex-col gap-8">
+          <div>
+            <h3
+              class="text-[6.4rem] max-[500px]:text-[4.2rem] font-bold text-white tracking-wide"
+            >
+              Let's <span class="text-indigo-500 font-riot">Travel</span>
+            </h3>
+            <h3
+              class="text-[7.4rem] max-[500px]:text-[5.2rem] font-bold text-white tracking-wide"
+            >
+              <span class="">Around</span> Cambodia
+            </h3>
+          </div>
+          <p class="text-[1.8rem] text-white tracking-widest">
+            TAKE A BREAK AND ENJOY OUR LIFE
+          </p>
+        </div>
+        <div>
+          <a
+            href="#info"
+            class="px-6 py-3 text-[1.6rem] font-medium text-white rounded-sm border duration-300 inline-block relative after:z-[-1] overflow-hidden after:content-[''] after:absolute after:bg-white after:w-[2rem] after:h-[5rem] after:rotate-[-45deg] after:top-[-5rem] hover:after:top-[-3rem] after:duration-300 before:content-[''] before:w-[2rem] before:h-[10rem] before:bg-white before:absolute before:duration-300 before:rotate- before:top-0 before:left-[-5rem] hover:before:left-0 before:rotate-[-45deg]"
+          >
+            Get Started
+          </a>
+        </div>
+      </main>
+      <!-- -------------- -->
+    </section>
+    <!-- ------------- -->
+
+    <!-- info section  -->
+    <main id="info" class="py-[10rem]">
+      <!-- section info -->
+      <section
+        class="my-container grid grid-cols-[1fr_60rem] gap-6 max-[1130px]:grid-cols-[1fr_45rem] max-[930px]:grid-cols-1 p-6 bg-white overflow-hidden rounded-md shadow-sm"
+      >
+        <article
+          class="article flex flex-col gap-[2.2rem] p-6 justify-center items-center w-[40rem] max-sm:w-full mx-auto text-center"
+        >
+          <h4 class="text-[3.2rem] font-bold uppercase tracking-wide">
+            <span class="text-indigo-500 font-riot">Explore</span>
+            every <span class="font-riot text-indigo-500">places</span>
+          </h4>
+          <p class="text-[1.6rem]">
+            We always find the beautiful place in our country. Fun time is
+            coming for us.
+          </p>
+          <a
+            href="./pages/popular-places.html"
+            class="inline-block text-[1.6rem] font-semibold py-3 px-6 text-white rounded-md bg-indigo-500 shadow-lg hover:shadow-indigo-500/50 duration-300"
+            >Learn More</a
+          >
+        </article>
+        <main class="info-image inline-block overflow-hidden relative">
+          <div>
+            <img
+              src="./assets/images/hero-img.jpeg"
+              alt="sea"
+              class="h-[55rem] max-[930px]:h-[40rem] w-full object-cover hover:scale-[1.4] rounded-md duration-1000 cursor-pointer"
+            />
+          </div>
+        </main>
+      </section>
+    </main>
+
+    <!-- grid gallery  -->
+    <main id="gallery" class="">
+      <section
+        class="my-container grid grid-cols-4 gap-6 bg-white p-6 rounded-md shadow-md max-sm:grid-cols-1 max-[1130px]:grid-cols-2"
+      >
+        <main
+          class="col-span-2 row-span-2 max-sm:h-[30rem] max-sm:col-span-1 max-sm:row-span-1 relative rounded-md overflow-hidden inline-block group"
+        >
+          <img
+            class="w-full h-full object-cover object-center duration-700 hover:scale-[1.2]"
+            src="./assets/images/onboat.JPG"
+            alt="gallery 1"
+          />
+          <p
+            class="py-2 px-6 max-sm:bottom-6 bg-white rounded-[3.2rem] absolute left-6 -bottom-12 duration-300 group-hover:bottom-6"
+          >
+            #Beach
+          </p>
+
+          <p
+            class="py-2 flex items-center gap-2 px-6 max-sm:top-6 max-sm:right-6 bg-white rounded-[3.2rem] absolute right-6 text-[1.2rem] font-medium -top-12 group-hover:top-6 duration-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="w-6 h-6 stroke-indigo-500"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+              />
+            </svg>
+            Koh Kong
+          </p>
+        </main>
+        <main
+          class="h-[30rem] rounded-md relative overflow-hidden inline-block group"
+        >
+          <img
+            class="w-full h-full object-cover object-center duration-700 hover:scale-[1.2]"
+            src="./assets/images/wow.jpg"
+            alt="gallery 1"
+          />
+          <p
+            class="py-2 px-6 max-sm:bottom-6 bg-white rounded-[3.2rem] absolute left-6 -bottom-12 group-hover:bottom-6 duration-300"
+          >
+            #Mountain
+          </p>
+
+          <p
+            class="py-2 flex items-center gap-2 px-6 max-sm:top-6 max-sm:right-6 bg-white rounded-[3.2rem] absolute right-6 text-[1.2rem] font-medium -top-12 group-hover:top-6 duration-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="w-6 h-6 stroke-indigo-500"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+              />
+            </svg>
+            Kampong Speu
+          </p>
+        </main>
+        <main
+          class="h-[30rem] rounded-md relative overflow-hidden inline-block group"
+        >
+          <img
+            class="w-full h-full object-cover object-center duration-700 hover:scale-[1.2]"
+            src="./assets/images/funtime.jpg"
+            alt="gallery 1"
+          />
+          <p
+            class="py-2 px-6 max-sm:bottom-6 bg-white rounded-[3.2rem] absolute left-6 -bottom-12 group-hover:bottom-6 duration-300"
+          >
+            #Temple
+          </p>
+
+          <p
+            class="py-2 flex items-center gap-2 px-6 max-sm:top-6 max-sm:right-6 bg-white rounded-[3.2rem] absolute right-6 text-[1.2rem] font-medium -top-12 group-hover:top-6 duration-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="w-6 h-6 stroke-indigo-500"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+              />
+            </svg>
+            Siem Reab
+          </p>
+        </main>
+        <main
+          class="h-[30rem] rounded-md relative overflow-hidden inline-block group"
+        >
+          <img
+            class="w-full h-full object-cover object-center duration-700 hover:scale-[1.2]"
+            src="./assets/images/morning.jpg"
+            alt="gallery 1"
+          />
+          <p
+            class="py-2 px-6 max-sm:bottom-6 bg-white rounded-[3.2rem] absolute left-6 -bottom-12 group-hover:bottom-6 duration-300"
+          >
+            #Beach
+          </p>
+
+          <p
+            class="py-2 flex items-center gap-2 px-6 max-sm:top-6 max-sm:right-6 bg-white rounded-[3.2rem] absolute right-6 text-[1.2rem] font-medium -top-12 group-hover:top-6 duration-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="w-6 h-6 stroke-indigo-500"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+              />
+            </svg>
+            Koh Kong
+          </p>
+        </main>
+        <main
+          class="h-[30rem] rounded-md relative overflow-hidden inline-block group"
+        >
+          <img
+            class="w-full h-full object-cover object-center duration-700 hover:scale-[1.2]"
+            src="./assets/images/sunset.JPG"
+            alt="gallery 1"
+          />
+          <p
+            class="py-2 px-6 max-sm:bottom-6 bg-white rounded-[3.2rem] absolute left-6 -bottom-12 group-hover:bottom-6 duration-300"
+          >
+            #Beach
+          </p>
+
+          <p
+            class="py-2 flex items-center gap-2 px-6 max-sm:top-6 max-sm:right-6 bg-white rounded-[3.2rem] absolute right-6 text-[1.2rem] font-medium -top-12 group-hover:top-6 duration-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="w-6 h-6 stroke-indigo-500"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+              />
+            </svg>
+            Koh Kong
+          </p>
+        </main>
+      </section>
+    </main>
+
+    <!-- simple card -->
+    <section class="cards my-[10rem]">
+      <main
+        class="my-container p-6 bg-white rounded-md shadow-md grid grid-cols-[repeat(auto-fit,minmax(25rem,auto))] gap-[3.2rem]"
+      >
+        <div class="card flex flex-col gap-8 group">
+          <p
+            class="text-[1.6rem] font-bold italic tracking-wider relative after:content-[''] after:absolute after:w-0 after:h-[.3rem] after:bg-indigo-500 after:duration-700 after:rounded-md after:bottom-[-.5rem] after:left-0 group-hover:after:w-full self-start"
+          >
+            Knong Psar
+          </p>
+          <div class="inline-block overflow-hidden">
+            <img
+              src="./assets/images/morningsun.jpg"
+              alt="pic"
+              class="h-[30rem] w-full object-cover object-center duration-500 hover:scale-[1.3]"
+            />
+          </div>
+          <p class="text-[1.4rem]">
+            Wake up in the morning and climb the top of the mountain to take a
+            fresh air.
+          </p>
+          <a
+            href="./pages/popular-places.html"
+            class="bg-[#393939] text-white py-3 px-6 text-[1.2rem] self-start font-medium tracking-widest"
+            >See More</a
+          >
+        </div>
+        <div class="card flex flex-col gap-8 group">
+          <p
+            class="text-[1.6rem] font-bold italic tracking-wider relative after:content-[''] after:absolute after:w-0 after:h-[.3rem] after:bg-indigo-500 after:duration-700 after:rounded-md after:bottom-[-.5rem] after:left-0 group-hover:after:w-full self-start"
+          >
+            Koh Kong Krav
+          </p>
+          <div class="inline-block overflow-hidden">
+            <img
+              src="./assets/images/morningbeach.JPG"
+              alt="pic"
+              class="h-[30rem] w-full object-cover object-center duration-500 hover:scale-[1.3]"
+            />
+          </div>
+          <p class="text-[1.4rem]">
+            In the morning, look around and see the beautiful beach with clear
+            water and fresh air.
+          </p>
+          <a
+            href="./pages/popular-places.html"
+            class="bg-[#393939] text-white py-3 px-6 text-[1.2rem] self-start font-medium tracking-widest"
+            >See More</a
+          >
+        </div>
+        <div class="card flex flex-col gap-8 group">
+          <p
+            class="text-[1.6rem] font-bold italic tracking-wider relative after:content-[''] after:absolute after:w-0 after:h-[.3rem] after:bg-indigo-500 after:duration-700 after:rounded-md after:bottom-[-.5rem] after:left-0 group-hover:after:w-full self-start"
+          >
+            Knong Sampov
+          </p>
+          <div class="inline-block overflow-hidden">
+            <img
+              src="./assets/images/knongsompov.jpg"
+              alt="pic"
+              class="h-[30rem] w-full object-cover object-center duration-500 hover:scale-[1.3]"
+            />
+          </div>
+          <p class="text-[1.4rem]">
+            One of the top of highest mountain in Cambodia.
+          </p>
+          <a
+            href="./pages/popular-places.html"
+            class="bg-[#393939] text-white py-3 px-6 text-[1.2rem] self-start font-medium tracking-widest"
+            >See More</a
+          >
+        </div>
+      </main>
+    </section>
+
+    <!-- footer  -->
+    <footer id="footer" class="bg-[#393939]">
+      <section class="my-container py-[8.4rem]">
+        <div class="my-top-footer flex justify-between items-center py-6">
+          <a
+            href="#"
+            class="text-white text-[3.2rem] font-semibold font-riot tracking-widest"
+            >Traveller</a
+          >
+          <a
+            href="./pages/register.html"
+            class="py-3 px-6 text-[1.6rem] bg-blue-400 text-white font-semibold"
+            >Get Started</a
+          >
+        </div>
+        <div
+          class="main-footer grid grid-cols-[repeat(auto-fit,minmax(25rem,auto))] gap-6 border-t-2 pt-6"
+        >
+          <div class="flex text-white flex-col gap-4 items-start">
+            <p class="font-semibold tracking-wider text-[1.8rem]">Product</p>
+            <p class="text-[1.4rem]">Shoes</p>
+            <p class="text-[1.4rem]">Tents</p>
+          </div>
+          <div class="flex text-white flex-col gap-4 items-start">
+            <p class="font-semibold tracking-wider text-[1.8rem]">Resource</p>
+            <p class="text-[1.4rem]">Learn</p>
+            <p class="text-[1.4rem]">FAQ</p>
+            <p class="text-[1.4rem]">Review</p>
+          </div>
+          <div class="flex text-white flex-col gap-4 items-start">
+            <p class="font-semibold tracking-wider text-[1.8rem]">Company</p>
+            <p class="text-[1.4rem]"><a href="#">About Us</a></p>
+            <p class="text-[1.4rem]">Join Team</p>
+          </div>
+          <div class="flex text-white flex-col gap-4 items-start">
+            <p class="font-semibold tracking-wider text-[1.8rem]">Address</p>
+            <p class="text-[1.4rem]">Stree #6A Highway</p>
+            <p class="text-[1.4rem]">Bakheng - Phnom Penh - Cambodia</p>
+            <p class="text-[1.4rem]">Contact - 0123-456-789</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script src="./js/index.js"></script>
+  </body>
 </html>
