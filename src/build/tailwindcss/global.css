@@ -54,7 +54,7 @@
 }
 
 nav.my-navbar {
-  @apply translate-x-0;
+  @apply left-0;
 }
 
 header nav span {

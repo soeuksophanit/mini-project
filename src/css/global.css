@@ -1437,8 +1437,7 @@ html {
 }
 
 nav.my-navbar {
-  --tw-translate-x: 0px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  left: 0px;
 }
 
 header nav span {
@@ -1716,6 +1715,18 @@ header nav.my-navbar + main span {
     inset: 0px;
   }
 
+  .max-\[930px\]\:left-\[-100\%\] {
+    left: -100%;
+  }
+
+  .max-\[930px\]\:left-0 {
+    left: 0px;
+  }
+
+  .max-\[930px\]\:top-0 {
+    top: 0px;
+  }
+
   .max-\[930px\]\:z-50 {
     z-index: 50;
   }
@@ -1736,8 +1747,16 @@ header nav.my-navbar + main span {
     height: 40rem;
   }
 
+  .max-\[930px\]\:h-screen {
+    height: 100vh;
+  }
+
   .max-\[930px\]\:w-\[90\%\] {
     width: 90%;
+  }
+
+  .max-\[930px\]\:w-full {
+    width: 100%;
   }
 
   .max-\[930px\]\:translate-x-\[-100\%\] {
@@ -1769,6 +1788,10 @@ header nav.my-navbar + main span {
   .max-\[930px\]\:text-\[\#393939\] {
     --tw-text-opacity: 1;
     color: rgb(57 57 57 / var(--tw-text-opacity));
+  }
+
+  .max-\[930px\]\:opacity-0 {
+    opacity: 0;
   }
 
   .max-\[930px\]\:duration-500 {
