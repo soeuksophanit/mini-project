@@ -1711,16 +1711,8 @@ header nav.my-navbar + main span {
     position: fixed;
   }
 
-  .max-\[930px\]\:inset-0 {
-    inset: 0px;
-  }
-
   .max-\[930px\]\:left-\[-100\%\] {
     left: -100%;
-  }
-
-  .max-\[930px\]\:left-0 {
-    left: 0px;
   }
 
   .max-\[930px\]\:top-0 {
@@ -1759,11 +1751,6 @@ header nav.my-navbar + main span {
     width: 100%;
   }
 
-  .max-\[930px\]\:translate-x-\[-100\%\] {
-    --tw-translate-x: -100%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
   .max-\[930px\]\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -1788,10 +1775,6 @@ header nav.my-navbar + main span {
   .max-\[930px\]\:text-\[\#393939\] {
     --tw-text-opacity: 1;
     color: rgb(57 57 57 / var(--tw-text-opacity));
-  }
-
-  .max-\[930px\]\:opacity-0 {
-    opacity: 0;
   }
 
   .max-\[930px\]\:duration-500 {
